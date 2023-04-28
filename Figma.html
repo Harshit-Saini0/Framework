@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet">
+	<title>Unit Selection</title>
+	<style>
+		body {
+		background: linear-gradient(-45deg, #4158d0, #c850c0, #ffde59, #c850c0, #4158d0, #c850c0, #ffde59);
+		background-size: 400% 400%;
+		animation: gradient 30s ease infinite;
+		height: 100vh;
+	}
+
+	@keyframes gradient {
+		0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+		
+	}
+
+
+		.button-wrapper svg{
+			font-family: 'Alkatra', cursive;
+			width: 100%;
+			height: auto;
+		}
+
+		.button-wrapper{
+			width: 20%;
+			height: auto;
+			margin: auto;
+			text-align: center;
+		}
+		.leftt{
+			margin-left: 5%;
+			text-align: center;
+			width: 25%;
+			float: left;
+		}
+		.rounded-btn {
+			background-color: #3023AE;
+			color: white;
+			font-size: 100%;
+			font-weight: bold;
+			border-radius: 1rem;
+			text-align: center;
+			border: none;
+			padding: 5% 10%;
+			margin: 0 5% 5%;
+			display: block;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			height: auto;
+		}
+		.rightt{
+			text-align: center;
+			width: 70%;
+			float: right;
+		}
+		.righttt{
+			margin-left: 2%;
+			text-align: center;
+			width: 45%;
+			float: left;
+		}
+		.rightttt{
+			margin-right: 2%;
+			text-align: center;
+			width: 45%;
+			float: right;
+			margin-bottom: 5%;
+		}
+		.clearfix{
+   			 clear:both;
+		}
+		.rounded-field {
+			width: 75%;
+			background-color: #3023AE;
+			color: white;
+			font-size: 100%;
+			font-weight: bold;
+			border-radius: 1rem;
+			text-align: center;
+			border: none;
+			padding: 2% 5%;
+			margin: 0 5% 5%;
+			display: block;
+			cursor: auto;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			display: inline-block;
+			height: auto;
+		}
+
+		.field-btn {
+			width: 75%;
+			background-color: #3023AE;
+			color: white;
+			font-size: 100%;
+			font-weight: bold;
+			border-radius: 1rem;
+			text-align: center;
+			border: none;
+			padding: 2% 5%;
+			margin: 0 5% 5%;
+			display: block;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			display: inline-block;
+			height: auto;
+		}
+
+		.field-btn:hover {
+			background-color: #4437C5;
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+			transform: translateY(-2px);
+		}
+		.rounded-btn:hover {
+			background-color: #4437C5;
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+			transform: translateY(-2px);
+		}
+		.glow {
+			margin-top: -1%;
+			margin-bottom: 2%;
+		    text-align: center;
+		    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5);
+        color: #fff;
+		font-weight: bolder;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 6.5vw;
+		}
+	</style>
+		
+		
+</head>
+
+
+
+
+<div class="button-wrapper">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 245 49" width = "245" height = "49">
+		<image width="245" height="49" xlink:href ="button1.png" xlink:alt = "oops"></image> 
+		<a xlink:href="#">
+		  <rect x="25" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(1)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="47" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(2)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="69" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(3)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="91" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(4)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="112" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(5)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="133" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(6)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="154" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(7)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="175" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(8)"></rect>
+		</a><a xlink:href="#">
+		  <rect x="197" y="14" fill="#fff" opacity="0" width="20" height="20"  onclick="toUnit(9)"></rect>
+		</a>
+	  </svg>
+	  
+
+  </div>
+  <script>
+        function toUnit(x) {
+	document.querySelector("image").setAttribute('href', "button" + x + ".png");
+	document.getElementById("title").innerHTML = "UNIT " + x;
+		document.getElementById("topic-btn").innerHTML =  "Choose Concept";
+		document.getElementById("question-btn").innerHTML = "Choose Skill";
+		document.getElementById("answer-field").innerHTML = "See how the concept connects to a Historical Thinking Skill by clicking the buttons to the left";
+		
+		document.getElementById("kc-field1").innerHTML = concepts[x-1][0];
+		document.getElementById("kc-field2").innerHTML = concepts[x-1][1];
+		if(concepts[x-1].length  < 3){
+
+			document.getElementById("kc-field3").style.display = "none";
+		}
+    	else{
+
+		document.getElementById("kc-field3").style.display = "inline-block";
+		document.getElementById("kc-field3").innerHTML = concepts[x-1][2];
+		}
+		for(var i = more[x-1][0].length + 1; i < 18; i++){
+
+			document.getElementById("more-field" + i).style.display = "none";
+		}
+		var uni = 0;
+		for(var i = 1; i < more[x-1][0].length + 1; i++){
+		if(more[x-1][0][i-1].charAt(0) == "I") {
+			uni++;
+			document.getElementById("more-field" + i).style.display = "inline-block";
+			document.getElementById("more-field" + i).className = "field-btn";
+			document.getElementById("more-field" + i).setAttribute( "onClick", "subUnit("+1+", " + uni + ");" );
+		}
+		else{
+			document.getElementById("more-field" + i).className = "rounded-field";
+			document.getElementById("more-field" + i).setAttribute( "onClick", "" );
+			document.getElementById("more-field" + i).style.display = "none";
+		}
+		document.getElementById("more-field" + i).innerHTML = more[x-1][0][i-1];
+		}
+		setUnit(x);
+	}
+	document.addEventListener('DOMContentLoaded', toUnit(1), false);
+	</script>
+<body onload = "toUnit(1)">
+    <h1 id="title" class = "glow">.</h1>
+</body>
+  <div class="righttt">
+	<button id="kc-field1" class="field-btn" onclick = "kc(1)"></button>
+	<button id="kc-field2" class="field-btn" onclick = "kc(2)"></button>
+	<button id="kc-field3" class="field-btn" onclick = "kc(3)"></button>
+  </div>
+  <div class="rightttt">
+	<button id="more-field1" class="rounded-field"></button>
+	<button id="more-field2" class="rounded-field"></button>
+	<button id="more-field3" class="rounded-field"></button>
+	<button id="more-field4" class="rounded-field"></button>
+	<button id="more-field5" class="rounded-field"></button>
+	<button id="more-field6" class="rounded-field"></button>
+	<button id="more-field7" class="rounded-field"></button>
+	<button id="more-field8" class="rounded-field"></button>
+	<button id="more-field9" class="rounded-field"></button>
+	<button id="more-field10" class="rounded-field"></button>
+	<button id="more-field11" class="rounded-field"></button>
+	<button id="more-field12" class="rounded-field"></button>
+	<button id="more-field13" class="rounded-field"></button>
+	<button id="more-field14" class="rounded-field"></button>
+	<button id="more-field15" class="rounded-field"></button>
+	<button id="more-field16" class="rounded-field"></button>
+	<button id="more-field17" class="rounded-field"></button>
+  </div>
+  <div class="clearfix"></div>
+  <div class = "leftt">
+	<button id="topic-btn" class="rounded-btn" onclick = "ask(1)">Choose Concept</button>
+	<button id="question-btn" class="rounded-btn" onclick = "ask(2)">Choose Skill</button>
+</div>
+<div class="rightt">
+	<button id="answer-field" class="rounded-field">See how the concept connects to a Historical Thinking Skill by clicking the buttons to the left</button>
+  </div>
+  <div class="clearfix"></div>
+<script>
+	var y = 0;
+	var unit = 1;
+	var skills = ["Contextualization", "Comparison", "Causation", "Continuity/Change"];
+	var skillsOne = ["Comparison", "Causation", "Continuity/Change"];
+	var z = 0;
+	var responses = [
+		//Unit 1
+		[
+	["The societies that developed mixed agricultural and hunter-gatherer economies in the Northeast, the Mississippi River Valley, and along the Atlantic seaboard favored the development of permanent villages . In contrast, societies in the Northwest and present-day California supported themselves by hunting and gathering, and in some areas developed settled communities supported by the vast resources of the ocean . Societies responded to the aridity of the Great Basin and the grasslands of the western Great Plains by developing largely mobile lifestyles . The spread of maize cultivation from present-day Mexico northward into the present-day American Southwest and beyond supported economic development, settlement, advanced irrigation, and social diversification among societies."
+	, "The spread of maize cultivation from present-day Mexico northward into the present-day American Southwest and beyond supported economic development, settlement, advanced irrigation, and social diversification among societies . Societies responded to the aridity of the Great Basin and the grasslands of the western Great Plains by developing largely mobile lifestyles.<br /><br />The causes of these developments were largely environmental factors such as aridity and resource availability . The effects of these developments were increased economic development, settlement, advanced irrigation, and social diversification among societies."
+	, "The spread of maize cultivation from present-day Mexico northward into the present-day American Southwest and beyond supported economic development, settlement, advanced irrigation, and social diversification among societies. Societies responded to the aridity of the Great Basin and the grasslands of the western Great Plains by developing largely mobile lifestyles.<br /><br />The continuity of these developments was that they were all responses to environmental factors such as aridity and resource availability. The change over time was that these developments led to increased economic development, settlement, advanced irrigation, and social diversification among societies."
+	],
+	["The imperial powers of Europe had different approaches to colonization and expansion in the Western Hemisphere. The Spanish were focused on extracting resources from their colonies, while the French were more focused on trade and commerce. The English were more focused on establishing permanent settlements and creating new societies in the New World."
+	, "The Columbian Exchange was a process of biological and cultural exchange between the Old World (Europe, Asia, and Africa) and the New World (the Americas) that began with Columbus’s arrival in the Americas in 1492. The causes of the Columbian Exchange include European exploration and colonization of the Americas, as well as the desire for new trade routes and resources.<br /><br />The effects of the Columbian Exchange include the spread of new crops and animals between the Old World and New World, as well as the spread of diseases such as smallpox that had devastating effects on Native American populations."
+	, "Over time, Native Americans were subjected to a variety of policies and practices by European colonizers that had significant impacts on their societies and cultures. These policies and practices included forced labor, forced conversion to Christianity, and forced removal from their ancestral lands. Over time, Native American populations declined dramatically as a result of these policies and practices, and many Native American cultures were destroyed or severely disrupted."
+	]
+		],
+
+		
+
+		//Unit 2
+		[
+	["The colonization and migration patterns of Europeans in North America were influenced by different imperial goals, cultures, and the varied North American environments where they settled. These patterns of colonization and migration had significant impacts on the social and political development of European colonies as well as their relationships with native populations.<br /><br />For example, Spanish colonizers developed institutions based on subjugating native populations, converting them to Christianity, and incorporating them into Spanish colonial society. French and Dutch colonial efforts involved relatively few Europeans and relied on trade alliances and intermarriage with American Indians to build economic and diplomatic relationships and acquire furs and other products for export to Europe. English colonization efforts attracted a comparatively large number of male and female British migrants, as well as other European migrants, all of whom sought social mobility, economic prosperity, religious freedom, and improved living conditions."
+	,"The Chesapeake and North Carolina colonies grew prosperous exporting tobacco — a labor-intensive product initially cultivated by white, mostly male indentured servants and later by enslaved Africans. The New England colonies, initially settled by Puritans, developed around small towns with family farms and achieved a thriving mixed economy of agriculture and commerce.<br /><br />One similarity between these two regions is that they both relied on agriculture as a major source of economic growth. However, the Chesapeake and North Carolina colonies relied on tobacco as their primary cash crop while the New England colonies relied on mixed farming and commerce.<br /><br />One difference between these two regions is that the Chesapeake and North Carolina colonies relied heavily on indentured servants and later enslaved Africans to cultivate their crops while the New England colonies relied more on family farms."	
+	,"The development of different economic systems in British colonies in North America was influenced by a variety of factors. One important factor was the availability of land. In the Chesapeake and North Carolina colonies, for example, land was relatively abundant and cheap, which encouraged the development of large plantations that relied on indentured servants and later enslaved Africans to cultivate tobacco.<br /><br />In contrast, land was relatively scarce and expensive in New England, which encouraged the development of small family farms that relied on mixed farming and commerce.<br /><br />Another important factor was the availability of labor. In the Chesapeake and North Carolina colonies, indentured servants and later enslaved Africans were readily available to cultivate crops. In New England, however, there were relatively few indentured servants or enslaved Africans, which encouraged the development of family farms that relied on family labor."	
+	,"The English colonies in North America experienced significant changes in their social and political structures over time. In the early years of colonization, most colonies were governed by joint-stock companies or proprietors who had been granted charters by the English monarchs. These companies and proprietors had significant power over the colonies and often made decisions without input from colonists.<br /><br />Over time, however, colonists began to demand more representation in colonial governments. In Virginia, for example, colonists demanded that the governor call a representative assembly to address their grievances. This assembly became known as the House of Burgesses and was the first representative assembly in British North America.<br /><br />Despite these changes, some aspects of colonial society remained relatively constant over time. For example, most colonies relied heavily on indentured servants and later enslaved Africans to cultivate crops and perform other labor-intensive tasks."
+	],
+	["The British colonies experienced a gradual Anglicization over time, developing autonomous political communities based on English models with influence from inter-colonial commercial ties, the emergence of a trans-Atlantic print culture, and the spread of Protestant evangelicalism. The presence of different European religious and ethnic groups contributed to a significant degree of pluralism and intellectual exchange, which were later enhanced by the First Great Awakening and the spread of European Enlightenment ideas. The ideas of the Enlightenment, which emphasized science and reason over faith and superstition, strongly influenced the American colonies in the eighteenth century."
+	, "The Great Awakening promoted a fervent, emotional religiosity while the Enlightenment encouraged the pursuit of reason in all things. On both sides of the Atlantic, British subjects grappled with these new ideas.<br /><br />The presence of different European religious and ethnic groups contributed to a significant degree of pluralism and intellectual exchange, which were later enhanced by the First Great Awakening and the spread of European Enlightenment ideas. The British colonies experienced a gradual Anglicization over time, developing autonomous political communities based on English models with influence from inter-colonial commercial ties, the emergence of a trans-Atlantic print culture, and the spread of Protestant evangelicalism."
+	, "The British colonies participated in political, social, cultural, and economic exchanges with Great Britain that encouraged both stronger bonds with Britain and resistance to Britain’s control. This exchange was due to the presence of different European religious and ethnic groups that contributed to a significant degree of pluralism and intellectual exchange which were later enhanced by the First Great Awakening and the spread of European Enlightenment ideas.<br /><br />The British colonies experienced a gradual Anglicization over time, developing autonomous political communities based on English models with influence from inter-colonial commercial ties, the emergence of a trans-Atlantic print culture, and the spread of Protestant evangelicalism.<br /><br />The British government increasingly attempted to incorporate its North American colonies into a coherent, hierarchical, and imperial structure in order to pursue mercantilist economic aims, but conflicts with colonists and American Indians led to erratic enforcement of imperial policies. Colonists’ resistance to imperial control drew on local experiences of self-government, evolving ideas of liberty, the political thought of the Enlightenment, greater religious independence and diversity, and an ideology critical of perceived corruption in the imperial system"
+	, "All the British colonies participated to varying degrees in the Atlantic slave trade due to the abundance of land and a growing European demand for colonial goods, as well as a shortage of indentured servants. As chattel slavery became the dominant labor system in many southern colonies, new laws created a strict racial system that prohibited interracial relationships and defined the descendants of African American mothers as black and enslaved in perpetuity. Africans developed both overt and covert means to resist the dehumanizing aspects of slavery and continue practices relating to their family and gender systems, culture, and religion."
+	]
+		],
+
+		//Unit 3
+		[
+	["Colonial rivalry intensified between Britain and France in the mid-18th century, as the growing population of the British colonies expanded into the interior of North America, threatening French–Indian trade networks and American Indian autonomy. This rivalry culminated in the Seven years’ War (the French and Indian War), in which Britain defeated France and allied American Indians. The war was fought over control of North America and was part of a larger global conflict known as the Seven Years’ War.<br /><br />The desire of many colonists to assert ideals of self-government in the face of renewed British imperial efforts led to a colonial independence movement and war with Britain. For example, after Britain achieved a major expansion of its territorial holdings by defeating France in the Seven Years’ War, it set out to raise revenue and consolidate control over its colonies. This led to imperial officials’ attempts to prevent colonists from moving westward which generated colonial opposition. Native groups also sought to both continue trading with Europeans and resist the encroachments of colonists on tribal lands."
+	," British attempts to assert tighter control over its North American colonies and the colonial resolve to pursue self-government led to a colonial independence movement and the Revolutionary War. The Seven Years’ War, also known as the French and Indian War, led to the British defeat of France and allied Native Americans.<br /><br />The British victory over France in the imperial struggle for North America led to new conflicts among the British government, the North American colonists, and American Indians, culminating in the creation of a new nation, the United States. The competition among the British, French, and American Indians for economic and political advantage in North America culminated in a series of wars and ultimately to the British defeat of France and indigenous allies."	
+	,"One example of causation is that British attempts to assert tighter control over its North American colonies led to a colonial independence movement and the Revolutionary War. The British government’s attempts to tax the colonies without their consent and to enforce laws that restricted colonial trade and other activities led to widespread protests and resistance. These efforts by the British government ultimately led to the Declaration of Independence and the Revolutionary War.<br /><br />Another example of causation is that the competition among the British, French, and American Indians for economic and political advantage in North America culminated in a series of wars and ultimately to the British defeat of France and indigenous allies. The Seven Years’ War, also known as the French and Indian War, was one such conflict that led to the British defeat of France and allied Native Americans. This victory by Britain over France in the imperial struggle for North America led to new conflicts among the British government, the North American colonists, and American Indians, culminating in the creation of a new nation, the United States."	
+	,"One example of continuity and change over time is that the British government’s attempts to tax the colonies without their consent and to enforce laws that restricted colonial trade and other activities led to widespread protests and resistance. These efforts by the British government ultimately led to the Declaration of Independence and the Revolutionary War. Another example of continuity and change over time is that the competition among the British, French, and American Indians for economic and political advantage in North America culminated in a series of wars and ultimately to the British defeat of France and indigenous allies. This victory by Britain over France in the imperial struggle for North America led to new conflicts among the British government, the North American colonists, and American Indians, culminating in the creation of a new nation, the United States."
+	],
+	["During the early 1700s, the Great Awakening was a religious revival that swept through the American colonies and challenged traditional religious authority by emphasizing individual salvation and a personal relationship with God. This movement led to a greater emphasis on individualism and helped lay the groundwork for later democratic movements. Another example is the Enlightenment movement which emphasized reason and individual rights over tradition and authority. This movement helped inspire many of the democratic ideals that were central to the American Revolution."
+	, "One comparison is between the Federalist Papers and Anti-Federalist Papers. Both were written during the ratification of the US Constitution and were used to influence public opinion on whether or not to ratify it. The Federalist Papers were written by Alexander Hamilton, James Madison, and John Jay and argued for a strong central government with a separation of powers. The Anti-Federalist Papers were written by various authors who opposed the Constitution because they believed it would lead to a tyrannical government.<br /><br />One similarity between these two papers is that they both sought to influence public opinion on whether or not to ratify the US Constitution. However, they differed in their views on what kind of government was best for the United States. The Federalist Papers argued for a strong central government with a separation of powers while the Anti-Federalist Papers argued for a weaker central government with more power given to individual states."
+	, "The American Revolution’s democratic and republican ideals inspired new experiments with different forms of government. One example of this was the creation of state constitutions that were written during the Revolutionary War. These constitutions were based on the idea that power should be divided among different branches of government and that citizens should have a say in how they were governed. One specific historical development that was influenced by these ideals was the creation of the United States Constitution. The Constitution was written in 1787 and was based on many of the same principles that were found in the state constitutions. For example, it established a federal system of government that divided power between the national government and state governments. It also created a system of checks and balances that ensured that no one branch of government had too much power."
+	, "The American Revolution’s democratic and republican ideals inspired new experiments with different forms of government that changed over time. For example, in 1777 Vermont became the first state to abolish slavery in its constitution. In 1780 Massachusetts became the first state to abolish slavery by judicial decree. In 1787 Congress passed the Northwest Ordinance which prohibited slavery in the Northwest Territory."
+	],
+	["In the early 17th century, the English established colonies in Virginia and Massachusetts Bay. The Virginia Company was chartered in 1606 and Jamestown was founded in 1607. The Massachusetts Bay Company was chartered in 1629 and Boston was founded in 1630. Both colonies were established for economic reasons and were based on agriculture. The Virginia colony was based on tobacco while the Massachusetts Bay colony was based on fishing, shipbuilding, and trade.<br /><br />The establishment of these colonies led to conflicts with Native American tribes who had already been living in the region for centuries. The English colonists often took land from the Native Americans without their consent and this led to violent conflicts between the two groups."
+	, "One comparison that can be made between historical developments in this unit is that various American Indian groups repeatedly evaluated and adjusted their alliances with Europeans, other tribes, and the US, seeking to limit migration of white settlers and maintain control of tribal lands and natural resources. British alliances with American Indians contributed to tensions between the US and Britain."
+	, "Migration intensified conflicts between European settlers and Native American populations as they competed for resources, boundaries, and trade.<br /><br />One cause of this increased migration was the availability of land in North America. After the Revolutionary War, the newly formed United States government encouraged westward expansion by offering cheap land to settlers. This led to an influx of European migrants who sought economic opportunity and social mobility.<br /><br />One effect of this increased migration was the displacement of Native American populations. As European settlers moved westward, they often encroached on Native American lands, leading to conflicts over resources and boundaries. The United States government often sided with European settlers in these conflicts, leading to the forced removal of Native American populations from their ancestral land."
+	, "In the early years of European colonization in North America, there were often attempts to establish trade relationships and alliances with Native American populations. For example, the French and Dutch established trade alliances with Native American populations to acquire furs and other products for export to Europe.<br /><br />However, as European migration to North America increased and competition over resources intensified, conflicts between European settlers and Native American populations became more frequent. European settlers often encroached on Native American lands, leading to conflicts over resources and boundaries. The United States government often sided with European settlers in these conflicts, leading to the forced removal of Native American populations from their ancestral lands."
+	]
+		],
+
+		//Unit 4
+		[
+	["The United States government encouraged westward expansion by offering cheap land to settlers. This led to an influx of European migrants who sought economic opportunity and social mobility. However, this migration also intensified conflicts between European settlers and Native American populations as they competed for resources, boundaries, and trade.<br /><br />These conflicts and the government’s response to them shaped the development of American democracy. The forced removal of Native American populations from their ancestral lands and the government’s siding with European settlers in conflicts over resources and boundaries raised questions about the nation’s democratic ideals and the need to change society and institutions to match them."
+	,"One comparison that can be made is the development of democracy and the celebration of a new national culture.<br /><br />On the one hand, the United States began to develop a modern democracy during this time period. This involved expanding the right to vote to more people and increasing representation in government. For example, many states abolished property requirements for voting, allowing more white men to participate in elections. There were also efforts to reform institutions such as prisons and asylums to better align with democratic ideals.<br /><br />On the other hand, Americans also celebrated a new national culture during this time period. This involved the development of a distinct American identity that was separate from European influences. For example, American writers and artists began to produce works that celebrated the nation’s natural beauty and democratic ideals. There were also efforts to create a national system of education that would instill these values in future generations."	
+	,"One cause of this expansion was the growth of democracy and the belief that more people should have a say in how they were governed. Many states abolished property requirements for voting, allowing more white men to participate in elections. There were also efforts to extend voting rights to women and African Americans, although these efforts were not successful during this time period.<br /><br />One effect of this expansion was increased participation in elections and greater representation in government. As more people gained the right to vote, voter turnout increased and politicians had to appeal to a broader range of voters. This led to the rise of new political parties and the development of new campaign tactics such as rallies and parades."	
+	,"One historical development that changed over time is the definition of American democratic ideals. In the early years of the United States, these ideals were often narrowly defined and only applied to a select group of people. For example, the right to vote was initially limited to white men who owned property.<br /><br />However, over time, these democratic ideals expanded to include more people. Many states abolished property requirements for voting, allowing more white men to participate in elections. There were also efforts to extend voting rights to women and African Americans, although these efforts were not successful during this time period.<br /><br />This expansion of democratic ideals was driven by social and political changes within American society. As more people gained the right to vote and participate in government, there was increased pressure to expand these rights to other groups. This process was not always smooth and there were often conflicts over who should be included in the definition of American democratic ideals."
+	],
+	["The United States government encouraged westward expansion by offering cheap land to settlers. This led to an influx of European migrants who sought economic opportunity and social mobility. However, this migration also intensified conflicts between European settlers and Native American populations as they competed for resources, boundaries, and trade.<br /><br />These conflicts and the government’s response to them laid the foundation for the profound changes to U.S. society and national and regional identities. The expansion of the American economy through innovations in technology, agriculture, and commerce was made possible in part by the migration of people within North America and the competition over resources that this migration generated."
+	, "One comparison that can be made is the acceleration of the American economy through innovations in technology and agriculture.<br /><br />On one hand, innovations in technology such as the development of textile machinery, interchangeable parts, and the telegraph dramatically expanded manufacturing and agricultural production. These innovations increased production efficiency and facilitated trade and exchange of information.<br /><br />On the other hand, innovations in agriculture such as the steel plow and the McCormick reaper also powerfully accelerated the American economy. These innovations allowed farmers to cultivate more land and produce more crops, which in turn stimulated economic growth.<br /><br />These two historical developments were interconnected. Innovations in technology and agriculture both contributed to the acceleration of the American economy during this time period. The development of new technologies and agricultural practices allowed for increased production and trade, which in turn led to profound changes to U.S. society and national and regional identities."
+	, "One cause of the market revolution was the growth of transportation networks and improvements in technology. The construction of roads, canals, and railroads made it easier to transport goods and people across the country. Innovations such as textile machinery, interchangeable parts, and the telegraph also facilitated trade and exchange of information.<br /><br />One effect of the market revolution was the growth of a market economy in which market relationships between producers and consumers came to prevail. The manufacture of goods became more organized and efficient, leading to increased production and trade. This in turn led to profound changes to U.S. society and national and regional identities."
+	, "One historical development that changed over time is the growth of a market economy in the United States. In the early years of the United States, the economy was largely based on subsistence farming and local trade. However, as transportation networks improved and new technologies were developed, the economy began to shift towards a market-based system.<br /><br />One factor that drove this change was the growth of transportation networks such as roads, canals, and railroads. These networks made it easier to transport goods and people across the country, facilitating trade and exchange of information. Innovations such as textile machinery, interchangeable parts, and the telegraph also contributed to the growth of a market economy by increasing production efficiency.<br /><br />As a result of these changes, the United States experienced a market revolution in which market relationships between producers and consumers came to prevail. The manufacture of goods became more organized and efficient, leading to increased production and trade. This in turn led to profound changes to U.S. society and national and regional identities."
+	],
+	["The United States government encouraged westward expansion by offering cheap land to settlers. This led to an influx of European migrants who sought economic opportunity and social mobility. However, this migration also intensified conflicts between European settlers and Native American populations as they competed for resources, boundaries, and trade.<br /><br />These conflicts and the government’s response to them laid the foundation for the foreign policy initiatives unit 4. The United States’ interest in increasing foreign trade and expanding its national borders was driven in part by the desire to secure resources and markets for its growing population. This led to government and private initiatives to promote trade and expand the nation’s borders."
+	, "One comparison that can be made is the United States’ interest in increasing foreign trade and expanding its national borders.<br /><br />On the one hand, the United States sought to increase foreign trade by negotiating trade agreements with other countries and promoting American exports. For example, the United States negotiated trade agreements with countries such as Great Britain and China to open new markets for American goods. The government also supported the development of new transportation networks such as roads, canals, and railroads to facilitate trade.<br /><br />On the other hand, the United States also sought to expand its national borders through territorial acquisitions and settlement. For example, the United States acquired new territories such as Louisiana and Florida through negotiations with foreign powers. The government also encouraged westward expansion by offering cheap land to settlers.<br /><br />These two historical developments were interconnected. The United States’ interest in increasing foreign trade and expanding its national borders were both driven by a desire to secure resources and markets for its growing population. These initiatives shaped the nation’s foreign policy and spurred government and private initiatives to promote trade and expansion."
+	, "One specific historical development is the United States’ acquisition of new territories through negotiations with foreign powers. This development had several causes and effects.<br /><br />One cause of this territorial expansion was the United States’ desire to secure resources and markets for its growing population. The acquisition of new territories such as Louisiana and Florida provided the United States with access to valuable resources such as land and ports. These acquisitions also opened up new markets for American goods.<br /><br />One effect of this territorial expansion was the growth of the United States and the displacement of Native American populations. As the United States acquired new territories, it encouraged westward expansion by offering cheap land to settlers. This led to an influx of European migrants who sought economic opportunity and social mobility. However, this migration also intensified conflicts between European settlers and Native American populations as they competed for resources, boundaries, and trade.<br /><br />This is just one example of how historical developments in APUSH Key Concept 4.3 had causes and effects. The United States’ acquisition of new territories was driven by a desire to secure resources and markets and had significant impacts on American society and Native American populations."
+	, "The U.S. interest in increasing foreign trade and expanding its national borders shaped the nation’s foreign policy and spurred government and private initiatives. For example, the U.S. sought dominance of North America and the Western Hemisphere through exploration, such as Lewis and Clark’s expedition to find a waterway to the Pacific. Additionally, the U.S. government implemented policies such as the Indian Removal Act which forcibly relocated Native American populations west of the Mississippi River."
+	]
+		],
+
+		
+		//Unit 5
+		[
+	["The United States became more connected with the world, pursued an expansionist foreign policy in the Western Hemisphere, and emerged as the destination for many migrants from other countries.<br /><br />During this period, popular enthusiasm for U.S. expansion was bolstered by economic and security interests. This resulted in the acquisition of new territories through events such as the Mexican-American War and substantial migration westward through initiatives such as the Homestead Act. The U.S. also pursued an expansionist foreign policy in the Western Hemisphere through initiatives such as the Monroe Doctrine."
+	,"The United States became more connected with the world and pursued an expansionist foreign policy in the Western Hemisphere. One way this was achieved was through the acquisition of new territories such as California and Texas as a result of the Mexican-American War. This expansion of U.S. territory provided more land for settlement and westward migration.<br /><br />Another way the U.S. became more connected with the world was through substantial migration westward. This was facilitated by initiatives such as the Homestead Act, which provided 160 acres of public land to settlers who would live on and improve the land for at least five years. This led to a significant increase in westward migration and settlement.<br /><br />One similarity between these two historical developments is that they were both driven by popular enthusiasm for U.S. expansion, bolstered by economic and security interests. One difference between these two developments is that the acquisition of new territories was achieved through military means while westward migration was facilitated through government initiatives."	
+	,"One specific historical development that can be examined within this context is the acquisition of new territories such as California and Texas as a result of the Mexican-American War.<br /><br />The causes of this historical development can be traced back to popular enthusiasm for U.S. expansion, bolstered by economic and security interests. The U.S. sought to expand its territory and influence in North America and saw the acquisition of new territories as a means to achieve this goal.<br /><br />The effects of this historical development were significant. The acquisition of new territories provided more land for settlement and westward migration. This led to a significant increase in westward migration and settlement, facilitated by initiatives such as the Homestead Act. The expansion of U.S. territory also had significant impacts on Native American populations, as their lands were often taken over by settlers."	
+	,"One historical development that changed over time within this context is the substantial migration westward.<br /><br />In the early years of westward migration, settlers often traveled in small groups or as individuals. They faced many challenges such as harsh weather conditions, difficult terrain, and conflicts with Native American populations. Over time, however, the U.S. government implemented initiatives such as the Homestead Act to facilitate westward migration. This act provided 160 acres of public land to settlers who would live on and improve the land for at least five years.<br /><br />As a result of these initiatives, westward migration increased significantly. Settlers traveled in larger groups and established new communities in the western territories. The U.S. government also implemented policies to protect settlers and facilitate their settlement of new territories."
+	],
+	["In the early years of the United States, slavery was largely confined to the southern states where it was an integral part of the agricultural economy. However, as the U.S. expanded westward, debates arose over whether slavery should be allowed in new territories. This led to a series of compromises such as the Missouri Compromise and the Compromise of 1850 in an attempt to maintain a balance between free and slave states.<br /><br />Over time, however, these compromises proved to be ineffective as tensions between the North and South continued to escalate. The debate over slavery became increasingly polarized and eventually led to the outbreak of the Civil War."
+	, "One historical development that can be compared within this context is the debate over slavery in the North and South.<br /><br />In the North, there was a growing movement to abolish slavery. This movement was driven by moral, religious, and economic arguments. Abolitionists such as William Lloyd Garrison and Frederick Douglass argued that slavery was a moral evil that must be abolished. The North also had a growing industrial economy that relied on free labor rather than slave labor.<br /><br />In contrast, the South relied heavily on slave labor to support its agricultural economy. Southern plantation owners argued that slavery was necessary for their economic survival and that it was a positive good for both slaves and slave owners. They also argued that states’ rights should allow them to decide whether or not to allow slavery within their borders.<br /><br />One similarity between these two historical developments is that they were both driven by economic interests. The North sought to abolish slavery in part because it was seen as a threat to their industrial economy while the South sought to preserve slavery because it was seen as essential to their agricultural economy. One difference between these two developments is that the North relied on moral and religious arguments to support their position while the South relied on arguments about states’ rights and economic necessity."
+	, "One specific historical development that can be examined within this context is the rise of the abolitionist movement.<br /><br />The causes of this historical development can be traced back to a growing moral and religious opposition to slavery in the North. Abolitionists such as William Lloyd Garrison and Frederick Douglass argued that slavery was a moral evil that must be abolished. The North also had a growing industrial economy that relied on free labor rather than slave labor.<br /><br />The effects of this historical development were significant. The abolitionist movement helped to raise awareness about the evils of slavery and put pressure on politicians to take action against it. This led to a series of compromises such as the Missouri Compromise and the Compromise of 1850 in an attempt to maintain a balance between free and slave states. However, these compromises proved to be ineffective as tensions between the North and South continued to escalate, eventually leading to the outbreak of the Civil War."
+	, "One historical development that changed over time within this context is the debate over slavery.<br /><br />In the early years of the United States, slavery was largely confined to the southern states where it was an integral part of the agricultural economy. However, as the U.S. expanded westward, debates arose over whether slavery should be allowed in new territories. This led to a series of compromises such as the Missouri Compromise and the Compromise of 1850 in an attempt to maintain a balance between free and slave states.<br /><br />Over time, however, these compromises proved to be ineffective as tensions between the North and South continued to escalate. The debate over slavery became increasingly polarized and eventually led to the outbreak of the Civil War."
+	],
+	["The debates over slavery and citizenship rights that are addressed in this key concept can be contextualized within the broader historical developments of the United States.<br /><br />For example, in previous units of the APUSH curriculum, we see that debates over slavery were present from the earliest days of the United States. The U.S. Constitution included a number of compromises over slavery such as the Three-Fifths Compromise and the Fugitive Slave Clause. These compromises reflected the deep divisions between the North and South over the issue of slavery.<br /><br />As the U.S. expanded westward, these debates intensified. Debates arose over whether slavery should be allowed in new territories, leading to a series of compromises such as the Missouri Compromise and the Compromise of 1850. However, these compromises proved to be ineffective as tensions between the North and South continued to escalate, eventually leading to the outbreak of the Civil War."
+	, "One historical development that can be compared within this context is the debate over citizenship rights for African Americans in the North and South.<br /><br />In the North, there was a growing movement to extend citizenship rights to African Americans. This movement was driven by moral, religious, and political arguments. The North had a growing industrial economy that relied on free labor rather than slave labor. As a result, many northern politicians supported measures such as the 13th, 14th, and 15th Amendments to extend citizenship rights to African Americans.<br /><br />In contrast, the South resisted efforts to extend citizenship rights to African Americans. Many southern states implemented measures such as poll taxes and literacy tests to prevent African Americans from exercising their newly acquired rights. This led to a period of intense debate over citizenship rights that continued well into the 20th century.<br /><br />One similarity between these two historical developments is that they were both driven by political interests. The North sought to extend citizenship rights to African Americans in part because it was seen as a way to secure their political support while the South sought to prevent African Americans from exercising their rights because it was seen as a threat to their political power. One difference between these two developments is that the North relied on moral and religious arguments to support their position while the South relied on arguments about states’ rights and economic necessity."
+	, "One specific historical development in 5.3 is how this victory settled the issues of slavery and secession but left unresolved many questions about the power of the federal government and citizenship rights.<br /><br />The North’s greater manpower and industrial resources, as well as the leadership of Abraham Lincoln and others, and the decision to emancipate slaves eventually led to the Union military victory over the Confederacy in the devastating Civil War. Reconstruction and the Civil War ended slavery, altered relationships between the states and the federal government, and led to debates over new definitions of citizenship, particularly regarding the rights of African Americans, women, and other minorities."
+	, "One way that historical developments changed over time is how this victory settled the issues of slavery and secession but left unresolved many questions about the power of the federal government and citizenship rights.<br /><br />The North’s greater manpower and industrial resources, as well as the leadership of Abraham Lincoln and others, and the decision to emancipate slaves eventually led to the Union military victory over the Confederacy in the devastating Civil War. Reconstruction and the Civil War ended slavery, altered relationships between the states and the federal government, and led to debates over new definitions of citizenship, particularly regarding the rights of African Americans, women, and other minorities.<br /><br />Both the Union and Confederacy mobilized their economies and societies to wage war even while facing considerable home front opposition. Jefferson Davis and the Confederacy never organized into a competent national government, as Southern states wanted to run their own affairs and often defied Davis. Lincoln, on the other hand, was able to organize a national effort with much greater ease and effectiveness, and the federal government became much stronger as a result."
+	]
+		],
+
+		
+		//Unit 6
+		[
+	["In Unit 5 of the APUSH Curriculum, the Union won in the Civil War. This victory settled the issues of slavery and secession but left unresolved many questions about the power of the federal government and citizenship rights.<br /><br />The rise of big business in the United States, as described in Key Concept 6.1, can be seen as a continuation of these developments. The end of slavery and the debates over new definitions of citizenship led to significant changes in the economy and society as a whole. Technological advances, large-scale production methods, and the opening of new markets encouraged the rise of industrial capitalism in the United States."
+	,"The rise of industrial capitalism with the development of labor unions during this time period can be compared. As industrial capitalism grew, so did concerns about working conditions and wages for laborers. This led to the formation of labor unions and efforts to improve working conditions and wages for workers."	
+	,"One specific historical development is how technological advances, large-scale production methods, and the opening of new markets encouraged the rise of industrial capitalism in the United States. This led to significant changes in the economy and society as a whole.<br /><br />For example, one effect of this development was the growth of cities and urbanization. As industrial capitalism grew, so did the need for labor in factories and other industries. This led to massive migrations of people from rural areas to cities in search of work. Urbanization also led to changes in housing, transportation, and other aspects of city life."	
+	,"One way that historical developments changed over time is how technological advances, large-scale production methods, and the opening of new markets encouraged the rise of industrial capitalism in the United States. This led to significant changes in the economy and society as a whole.<br /><br />For example, as industrial capitalism grew, so did concerns about working conditions and wages for laborers. This led to the formation of labor unions and efforts to improve working conditions and wages for workers. Over time, these efforts led to changes in labor laws and regulations that helped to improve working conditions for many workers."
+	],
+	["Patterns of migration had significant impacts on the social and political development of urban and rural areas as well as their relationships with each other.<br /><br />For example, international and internal migration increased urban populations and fostered the growth of a new urban culture. Cities attracted immigrants from Asia, southern and eastern Europe, and African Americans from the south as they escaped oppression and sought opportunities. Many native-born Americans responded with nativist views and anti-immigrant campaigns, while some introduced urban reforms to help immigrants assimilate.<br /><br />In contrast, rural areas were also affected by migration patterns. As industrial capitalism grew, so did the need for labor in factories and other industries. This led to massive migrations of people from rural areas to cities in search of work. This left many rural areas with declining populations and changes in their economies and societies."
+	, "One way to compare historical developments in this unit is to look at how international and internal migration increased urban populations and fostered the growth of a new urban culture. This led to significant changes in the economy and society as a whole.<br /><br />For example, we can compare the growth of cities with the changes that occurred in rural areas as a result of migration patterns. As industrial capitalism grew, so did the need for labor in factories and other industries. This led to massive migrations of people from rural areas to cities in search of work. Urbanization also led to changes in housing, transportation, and other aspects of city life.<br /><br />In contrast, rural areas were also affected by migration patterns. As people left rural areas for cities, many rural areas were left with declining populations and changes in their economies and societies. This led to efforts to improve conditions in rural areas and to attract new residents."
+	, "One specific historical development is how international and internal migration increased urban populations and fostered the growth of a new urban culture. This led to significant changes in the economy and society as a whole.<br /><br />For example, one effect of this development was the growth of cities and urbanization. As industrial capitalism grew, so did the need for labor in factories and other industries. This led to massive migrations of people from rural areas to cities in search of work. Urbanization also led to changes in housing, transportation, and other aspects of city life.<br /><br />Another effect was the rise of nativism and anti-immigrant campaigns. As cities attracted immigrants from Asia, southern and eastern Europe, and African Americans from the south, many native-born Americans responded with nativist views and anti-immigrant campaigns. This led to efforts to restrict immigration and to introduce urban reforms to help immigrants assimilate."
+	, "One way that historical developments changed over time is how international and internal migration increased urban populations and fostered the growth of a new urban culture. This led to significant changes in the economy and society as a whole.<br /><br />For example, as cities attracted immigrants from Asia, southern and eastern Europe, and African Americans from the south, many native-born Americans responded with nativist views and anti-immigrant campaigns. Over time, these efforts led to changes in immigration laws and regulations that restricted immigration from certain countries.<br /><br />Another way that historical developments changed over time is how urbanization led to changes in housing, transportation, and other aspects of city life. As cities grew, so did the need for new forms of housing and transportation to accommodate the growing population. This led to the development of new technologies such as skyscrapers and subways."
+	],
+	["The Gilded Age followed the Civil War and Reconstruction. The country was undergoing rapid industrialization and urbanization, which led to significant economic growth but also created new social problems such as poverty, crime, and corruption in government. These issues were addressed by various reform movements and political debates over economic and social policies."
+	, "During the Gilded Age, the impact of new technologies and the growth of cities were closely intertwined. The Second Industrial Revolution brought about new inventions and technologies that revolutionized industries such as transportation, communication, and manufacturing. These technological advancements led to increased efficiency and productivity, which in turn spurred economic growth and urbanization.<br /><br />As industries grew, they attracted workers from rural areas and immigrants from abroad to cities in search of employment. The population of cities grew rapidly, with many people living in crowded tenement housing. Urbanization also brought about new social problems such as poverty, crime, and corruption in government.<br /><br />One key difference between the impact of new technologies and the growth of cities is that while new technologies brought about economic growth and improved standards of living for some, they also led to increased inequality and social problems. The growth of cities, on the other hand, brought about both opportunities and challenges as people adapted to urban life."
+	, "During this time, social norms were challenged by new intellectual movements such as social Darwinism, which was used to justify racial hierarchies. Some business leaders advocated philanthropy through the Gospel of Wealth, while alternative economic theories such as utopianism, socialism, and communism also spread.<br /><br />One cause of this rise in new intellectual movements was the rapid industrialization and urbanization that occurred during the Gilded Age. As the country underwent significant economic growth, it also faced new social problems such as poverty, crime, and corruption in government. These issues led to debates over economic and social policies and spurred the growth of new intellectual movements that sought to address these problems.<br /><br />The effects of these new intellectual movements were far-reaching. They challenged traditional social norms and led to debates over economic and social policies. Some of these movements, such as the Gospel of Wealth, advocated for philanthropy and social responsibility among the wealthy. Others, such as socialism and communism, called for more radical changes to the economic system."
+	, "One historical development that changed over time during the Gilded Age was the rise of new intellectual movements. During this time, social norms were challenged by new intellectual movements such as social Darwinism, which was used to justify racial hierarchies. Some business leaders advocated philanthropy through the Gospel of Wealth, while alternative economic theories such as utopianism, socialism, and communism also spread.<br /><br />Over time, these new intellectual movements evolved and changed as they interacted with and influenced each other. For example, the ideas of social Darwinism were challenged by other intellectual movements such as progressivism, which advocated for social reform and greater government intervention in the economy. Similarly, the Gospel of Wealth was challenged by alternative economic theories that called for more radical changes to the economic system.<br /><br />These changes in intellectual movements were influenced by broader historical developments such as industrialization, urbanization, and immigration. As the country underwent significant economic growth and faced new social problems, these intellectual movements evolved in response to changing conditions."
+	]
+		],
+
+		
+		//Unit 7
+		[
+	["The United States continued its transition from a rural, agricultural economy to an urban, industrial economy led by large corporations.<br /><br />In terms of contextualizing this concept, it is important to note that this period followed the Gilded Age, a time of rapid industrialization and urbanization that brought about significant economic growth but also created new social problems such as poverty, crime, and corruption in government. These issues were addressed by various reform movements such as the Progressive movement, which sought to address social problems through government intervention.<br /><br />One example of a social reform during this time was the push for women’s suffrage. Women’s rights activists such as Carrie Chapman Catt and Susan B. Anthony fought for women’s right to vote, which was eventually granted with the passage of the 19th Amendment in 1920. Another example of a social reform during this time was the temperance movement, which sought to address the social problems associated with alcohol consumption by advocating for prohibition."
+	,"During this time, growth expanded opportunity while economic instability led to new efforts to reform U.S. society and its economic system. The United States continued its transition from a rural, agricultural economy to an urban, industrial economy led by large corporations.<br /><br />One example of a social reform during this time was the push for women’s suffrage. Women’s rights activists such as Carrie Chapman Catt and Susan B. Anthony fought for women’s right to vote, which was eventually granted with the passage of the 19th Amendment in 1920. Another example of a social reform during this time was the temperance movement, which sought to address the social problems associated with alcohol consumption by advocating for prohibition.<br /><br />In contrast, there were also significant economic reforms during this time. For example, the Progressive movement sought to address economic inequality and corruption through government intervention in the economy. This led to reforms such as antitrust legislation and regulation of industries such as railroads and banking."	
+	,"One cause of the rise of the Progressive movement was the rapid industrialization and urbanization that occurred during the Gilded Age. As the country underwent significant economic growth, it also faced new social problems such as poverty, crime, and corruption in government. These issues led to debates over economic and social policies and spurred the growth of the Progressive movement, which sought to address these problems through government intervention.<br /><br />The effects of the Progressive movement were far-reaching. It led to reforms such as antitrust legislation and regulation of industries such as railroads and banking. The movement also advocated for social reforms such as women’s suffrage and temperance. These reforms helped to address some of the social and economic problems that arose during this time."	
+	,"The Progressive movement arose in response to the rapid industrialization and urbanization that occurred during the Gilded Age. As the country underwent significant economic growth, it also faced new social problems such as poverty, crime, and corruption in government. These issues led to debates over economic and social policies and spurred the growth of the Progressive movement, which sought to address these problems through government intervention.<br /><br />Over time, the Progressive movement evolved and changed as it interacted with and influenced other social and political movements. For example, the movement’s focus on social reform led to the passage of legislation such as the 19th Amendment, which granted women the right to vote. The movement also advocated for economic reforms such as antitrust legislation and regulation of industries such as railroads and banking."
+	],
+	["Popular culture grew in influence in U.S. society, even as debates increased over the effects of culture on public values, morals, and American national identity.<br /><br />One specific example of this is the rise of new forms of media such as radio and cinema which helped to spread culture. Another example is the Harlem Renaissance, an explosion of African American culture through writing, art, and other forms spreading from Harlem, New York. Additionally, during this time period there were significant changes in migration patterns such as the climax of European immigration just before WWI and the implementation of immigration quotas in 1921 and 1924 which restricted immigration."
+	, "The growth of mass culture was facilitated by innovations in communications and technology such as the rise of new forms of media like radio and cinema. These new forms of media helped to spread “modern” values and ideas and led to debates over the effects of culture on public values, morals, and American national identity.<br /><br />At the same time, significant changes occurred in migration patterns. European immigration reached its climax just before WWI and was later restricted by immigration quotas implemented in 1921 and 1924. These changes in migration patterns affected the demographics of the country and led to cultural conflicts between groups."
+	, "One important factor that contributed to the growth of mass culture was the rise of new forms of media such as radio and cinema. These new forms of media helped to spread “modern” values and ideas and led to debates over the effects of culture on public values, morals, and American national identity.<br /><br />The growth of mass culture also had significant effects on American society. For example, it led to the rise of popular culture and an increased focus on leisure and entertainment. It also contributed to the spread of new ideas and values, which sometimes led to cultural conflicts between groups.<br /><br />Overall, the growth of mass culture through innovations in communications and technology was a significant historical development during this time period that had far-reaching causes and effects."
+	, "At the beginning of this time period, new forms of media such as radio and cinema were just starting to emerge. These new forms of media helped to spread “modern” values and ideas and led to debates over the effects of culture on public values, morals, and American national identity. As time went on, these new forms of media became increasingly popular and influential, leading to the growth of mass culture.<br /><br />The growth of mass culture also had significant effects on American society that changed over time. For example, it led to the rise of popular culture and an increased focus on leisure and entertainment. It also contributed to the spread of new ideas and values, which sometimes led to cultural conflicts between groups."
+	],
+	["One specific historical development that changed over time during this period was the United States’ participation in global conflicts. For example, at the beginning of this time period, the United States was just starting to emerge as a global power. The Spanish-American War in 1898 marked a turning point in American foreign policy as the United States acquired territories such as Puerto Rico, Guam, and the Philippines and emerged as a major imperial power.<br /><br />As time went on, the United States became increasingly involved in global conflicts such as World War I and World War II. These conflicts had significant impacts on American society and renewed debates over the nation’s values and its role in the world. Participation in these conflicts also propelled the United States into a dominant international military, political, cultural, and economic position."
+	, "Two historical developments that can be compared are the United States’ participation in global conflicts and its emergence as a dominant international military, political, cultural, and economic power.<br /><br />During this time period, the United States became increasingly involved in global conflicts such as World War I and World War II. These conflicts had significant impacts on American society and renewed debates over the nation’s values and its role in the world. Participation in these conflicts also propelled the United States into a dominant international military, political, cultural, and economic position.<br /><br />At the same time, the United States was also experiencing significant changes domestically as it emerged as a dominant economic power. For example, during this time period there were significant developments in industry and technology that led to increased productivity and economic growth. These developments also had significant impacts on American society as they led to changes in work and leisure patterns and to debates over the distribution of wealth and power."
+	, "One important factor that contributed to the United States’ emergence as a dominant international power was its participation in global conflicts such as World War I and World War II. These conflicts propelled the United States into a dominant international military and political position and led to increased government intervention in the economy and society.<br /><br />The United States’ emergence as a dominant international power also had significant effects on American society. For example, it led to debates over civil liberties and national security and to changes in gender roles and race relations as women and minorities took on new roles in the workforce and society. It also contributed to the growth of American influence around the world."
+	, "At the beginning of this time period, the United States was just starting to emerge as a global power. The Spanish-American War in 1898 marked a turning point in American foreign policy as the United States acquired territories such as Puerto Rico, Guam, and the Philippines and emerged as a major imperial power.<br /><br />As time went on, the United States became increasingly involved in global conflicts such as World War I and World War II. These conflicts had significant impacts on American society and renewed debates over the nation’s values and its role in the world. Participation in these conflicts also propelled the United States into a dominant international military, political, cultural, and economic position."
+	]
+		],
+
+		
+		//Unit 8
+		[
+	["Coming soon"
+	,"Coming soon"	
+	,"Coming soon"	
+	,"Coming soon"
+	],
+	["Coming soon"
+	, "Coming soon"
+	, "Coming soon"
+	, "Coming soon"
+	],
+	["Coming soon"
+	, "Coming soon"
+	, "Coming soon"
+	, "Coming soon"
+	]
+		],
+
+		
+		//Unit 9
+		[
+	["Coming soon"
+	,"Coming soon"	
+	,"Coming soon"	
+	,"Coming soon"
+	],
+	["Coming soon"
+	, "Coming soon"
+	, "Coming soon"
+	, "Coming soon"
+	],
+	["Coming soon"
+	, "One example of how the end of the Cold War prompted a redefinition of foreign policy and role in the world is the shift in U.S.-Soviet relations. During the Cold War, the United States and the Soviet Union were engaged in a tense ideological and military standoff. However, with the end of the Cold War, the United States had the opportunity to reassess its relationship with Russia, the successor state to the Soviet Union. This led to diplomatic efforts and arms control negotiations, such as the Strategic Arms Reduction Treaty (START), aimed at reducing nuclear arsenals. The United States recognized the need to move away from confrontation and embrace a more cooperative approach, reflecting a shift in foreign policy and a redefinition of its role as a global leader.<br /><br />Another example is the response to the challenges posed by terrorism. The end of the Cold War did not signify the end of security threats for the United States but presented new challenges from non-state actors, particularly transnational terrorist organizations such as Al-Qaeda. In response, the nation had to redefine its foreign policy approach and role in combating terrorism. This included military interventions, such as the U.S. military engagements in Afghanistan and Iraq, aimed at disrupting terrorist networks and ensuring national security. Additionally, the establishment of the Department of Homeland Security and the implementation of enhanced intelligence and counterterrorism operations reflected the nation's determination to address emerging threats.<br /><br />In comparing these examples, we see that the reevaluation of U.S.-Soviet relations emphasized diplomatic efforts and arms control as means of reducing tensions and embracing cooperation. On the other hand, the response to terrorism highlighted the importance of military interventions and domestic security measures, largely increasing tensions."
+	, "One specific example is the cause and effect of the Gulf War in 1990-1991. The cause of the Gulf War was Iraq's invasion of Kuwait in August 1990. Iraqi leader Saddam Hussein sought to annex Kuwait, which held significant oil reserves, in an attempt to alleviate Iraq's economic crisis and expand its regional influence. This act of aggression posed a direct threat to regional stability and international security, prompting a response from the United States and its allies.<br /><br />As a result, the United States led a multinational coalition to counter Iraq's aggression in what became known as Operation Desert Storm. The effects of the Gulf War were far-reaching. First, the United States and its coalition partners successfully expelled Iraqi forces from Kuwait, restoring its sovereignty. This demonstrated the United States' commitment to protecting its interests and maintaining global order.<br /><br />Second, the Gulf War showcased the United States' military capabilities and its role as a dominant global power. The swift and overwhelming military response by the U.S.-led coalition demonstrated the nation's ability to project force on a large scale and achieved a decisive victory. This bolstered the perception of U.S. military might and solidified its position as a key player in international affairs.<br /><br />Furthermore, the Gulf War also had significant geopolitical implications. The United States, through its leadership in the coalition, was able to rally support from diverse nations and forge stronger alliances in the Middle East and beyond. The war also highlighted the importance of energy security and the need to protect global oil supplies, reinforcing the United States' role as a guardian of international energy resources."
+	, "Coming soon"
+	]
+		]
+	]		
+
+	var concepts = [
+		//Unit 1
+		[
+			"Key Concept 1.1<br />As native populations migrated and settled across the vast expanse of North America over time, they developed distinct and increasingly complex societies by adapting to and transforming their diverse environments."
+			, "Key Concept 1.2<br />Contact among Europeans, Native Americans, and Africans resulted in the Columbian Exchange and significant social, cultural, and political changes on both sides of the Atlantic Ocean."
+		],
+
+		//Unit 2
+		[
+			"Key Concept 2.1<br />Europeans developed a variety of colonization and migration patterns, influenced by different imperial goals, cultures, and the varied North American environments where they settled, and they competed with each other and American Indians for resources."
+			, "Key Concept 2.2<br />The British colonies participated in political, social, cultural, and economic exchanges with Great Britain that encouraged both stronger bonds with Britain and resistance to Britain’s control."
+		],
+
+		//Unit 3
+		[
+			"Key Concept 3.1<br />British attempts to assert tighter control over its North American colonies and the colonial resolve to pursue self-government led to a colonial independence movement and the Revolutionary War."
+			, "Key Concept 3.2<br />The American Revolution’s democratic and republican ideas inspired new experiments with different forms of government."
+			, "Key Concept 3.3<br />Migration within North America and competition over resources, boundaries, and trade intensified conflicts among peoples and nations."
+		],
+
+		//Unit 4
+		[
+			"Key Concept 4.1<br />The United States began to develop a modern democracy and celebrated a new national culture, while Americans sought to define the nation’s democratic ideals and change their society and institutions to match them."
+			, "Key Concept 4.2<br />Innovations in technology, agriculture, and commerce powerfully accelerated the American economy, precipitating profound changes to U.S. society and to national and regional identities."
+			,"Key Concept 4.3<br />The U.S. interest in increasing foreign trade and expanding its national borders shaped the nation’s foreign policy and spurred government and private initiatives."
+		],
+
+		
+		//Unit 5
+		[
+			"Key Concept 5.1<br />The United States became more connected with the world, pursued an expansionist foreign policy in the Western Hemisphere, and emerged as the destination for many migrants from other countries."
+			, "Key Concept 5.2<br />Intensified by expansion and deepening regional divisions, debates over slavery and other economic, cultural, and political issues led the nation into civil war."
+			,"Key Concept 5.3<br />The Union victory in the Civil War and the contested Reconstruction of the South settled the issues of slavery and secession, but left unresolved many questions about the power of the federal government and citizenship rights."
+		],
+
+		
+		//Unit 6
+		[
+			"Key Concept 6.1<br />Technological advances, large-scale production methods, and the opening of new markets encouraged the rise of industrial capitalism in the United States."
+			, "Key Concept 6.2<br />The migrations that accompanied industrialization transformed both urban and rural areas of the United States and caused dramatic social and cultural change."
+			,"Key Concept 6.3<br />The “Gilded Age” witnessed new cultural and intellectual movements in tandem with political debates over economic and social policies."
+		],
+
+		
+		//Unit 7
+		[
+			"Key Concept 7.1<br />Growth expanded opportunity, while economic instability led to new efforts to reform U.S. society and its economic system."
+			, "Key Concept 7.2<br />Innovations in communications and technology contributed to the growth of mass culture, while significant changes occurred in internal and international migration patterns."
+			, "Key Concept 7.3<br />Participation in a series of global conflicts propelled the United States into a position of international power while renewing domestic debates over the nation’s proper role in the world."
+		],
+
+		
+		//Unit 8
+		[
+			"Key Concept 8.1<br />The United States responded to an uncertain and unstable postwar world by asserting and working to maintain a position of global leadership, with far-reaching domestic and international consequences."
+			, "Key Concept 8.2<br />New movements for civil rights and liberal efforts to expand the role of government generated a range of political and cultural responses."
+			, "Key Concept 8.3<br />Postwar economic and demographic changes had far-reaching consequences for American society, politics, and culture."
+		],
+
+		
+		//Unit 9
+		[
+			"Key Concept 9.1<br />A newly ascendant conservative movement achieved several political and policy goals during the 1980s and continued to strongly influence public discourse in the following decades."
+			, "Key Concept 9.2<br />Moving into the 21st century, the nation experienced significant technological, economic, and demographic changes."
+			, "Key Concept 9.3<br />The end of the Cold War and new challenges to U.S. leadership forced the nation to redefine its foreign policy and role in the world."
+		]
+	]	
+	var more = [
+	   [//Unit 1
+		    [
+		"I. Different native societies adapted to and transformed their environments through innovations in agriculture, resource use, and social structure."
+
+,"A. The spread of maize cultivation from present-day Mexico northward into the present-day American Southwest and beyond supported economic development, settlement, advanced irrigation, and social diversification among societies.<br />Examples:  Pueblo, Navajo"
+ 
+,"B. Societies responded to the aridity of the Great Basin and the grasslands of the western Great Plains by developing largely mobile lifestyles.<br />Examples: Sioux, Apache"
+ 
+,"C. In the Northeast, the Mississippi River Valley, and along the Atlantic seaboard some societies developed mixed agricultural and hunter–gatherer economies that favored the development of permanent villages.<br />Examples:  Iroquois Confederacy of the Northeast; Creek, Chocktaw, or Cherokee of the Southeast"
+
+, "D. Societies in the Northwest and present-day California supported themselves by hunting and gathering, and in some areas developed settled communities supported by the vast resources of the ocean.<br />Examples:  Chinook, Nez Perce, Shoshone"
+],
+
+		[
+		"I. European expansion into the Western Hemisphere generated intense social, religious, political and economic competition and changes within European societies.", 
+
+		"A. European nations’ efforts to explore and conquer the New World stemmed from a search for new sources of wealth, economic and military competition, and a desire to spread Christianity.<br />Examples:  “3 Gs”:  Gold, God, and Glory, founding of St. Augustine (1565), Northwest Passage, Roanoke Island",
+
+"B. The Columbian Exchange brought new crops to Europe from the Americas, stimulating European population growth, and new sources of mineral wealth, which facilitated the European shift from feudalism to capitalism.<br />Examples:  Introduction of corn, potatoes, and tomatoes to Europe, growth of European nation-states",
+
+"C. Improvements in maritime technology and more organized methods for conducting international trade, such as joint-stock companies, helped drive changes to economies in Europe and the Americas.<br />Examples:  Caravel, sextant, joint-stock trading company",           
+
+"II. The Columbian Exchange and development of the Spanish Empire in the Western Hemisphere resulted in extensive demographic, economic, and social changes.",
+
+"A. Spanish exploration and conquest were accompanied and furthered by widespread deadly epidemics that devastated native populations and by the introduction of crops and animals not found in the Americas.<br />Examples:  Spread of smallpox; European introduction of horses, rice, wheat, and oxen to the New World; bison hunting on the Great Plains",
+
+"B. In the encomienda system, Spanish colonial economies marshaled Native American labor to support plantation-based agriculture and extract precious metals and other resources.<br />Examples:  Sugar plantations, silver mines, Black Legend",
+           
+"C. European traders partnered with some African groups who practiced slavery to forcibly extract slave labor for the Americas. The Spanish imported enslaved Africans to labor in plantation agriculture and mining.<br />Examples: Line of Demarcation, Middle Passage",
+
+"D. The Spanish developed a caste system that incorporated, and carefully defined the status of, the diverse population of Europeans, Africans, and Native Americans in their empire.<br />Examples:  Mestizo, Zambo, mulatto",
+ 
+"III. In their interactions, Europeans and Native Americans asserted divergent worldviews regarding issues such as religion, gender roles, family, land use, and power.",
+
+"A. Mutual misunderstandings between Europeans and Native Americans often defined the early years of interaction and trade as each group sought to make sense of the other.  Over time, Europeans and Native Americans adopted some useful aspects of each other’s culture.<br />Examples:  African religious traditions combined with Christian traditions, Maroon communities",
+
+"B. As European encroachments on Native Americans’ lands and demands on their labor increased, native peoples sought to defend and maintain their political sovereignty, economic prosperity, religious beliefs, and concepts of gender relations through diplomatic negotiations and military resistance.<br />Examples:  Spanish mission system, Juan de Onate, Acoma War and defeat of the Pueblo (1599)",
+
+"C. Extended contact with Native Americans and Africans fostered debate among European religious and political leaders about how non-Europeans should be treated, as well as evolving religious, cultural, and racial justifications for the subjugation of Africans and Native Americans.<br />Examples:  Juan de Sepulveda, Bartolome de Las Casas, communal nature of land, private vs. public ownership of land, animism."
+
+]
+],
+//Unit 2
+[
+
+[
+   "I. Spanish, French, Dutch, and British colonizers had different economic and imperial goals involving land and labor that shaped the social and political development of their colonies as well as their relationships with native populations."
+
+, "A. Spanish efforts to extract wealth from the land led them to develop institutions based on subjugating native populations, converting them to Christianity, and incorporating them, along with enslaved and free Africans, into the Spanish colonial society.<br />Examples:  Christopher Columbus, Cortez, Pizarro, conquistadores, mission system, encomienda system, New Spain, establishment of Santa Fe (1610)"
+           
+, "B. French and Dutch colonial efforts involved relatively few Europeans and relied on trade alliances and intermarriage with American Indians to build economic and diplomatic relationships and acquires furs and other products for export to Europe.<br />Examples: Samuel de Champlain, Coureurs de bois, New Netherland, Jesuit missionaries, French alliance with Huron Indians"
+           
+, "C. English colonization efforts attracted a comparatively large number of male and female British migrants, as well as other European migrants, all of whom sought social mobility, economic prosperity, religious freedom, and improved living conditions. These colonists focused on agriculture and settled on land taken from Native Americans, from whom they lived separately.<br />Examples:  Jamestown (1607), starving time, head-right system, John Rolfe, tobacco as cash crop"
+           
+, "II. In the 17th century, early British colonies developed along the Atlantic coast, with regional differences that reflected various environmental, economic, cultural, and demographic factors.",
+
+"A. The Chesapeake and North Carolina colonies grew prosperous exporting tobacco — a labor-intensive product initially cultivated by white, mostly male indentured servants and later by enslaved Africans.<br />Examples:  Middle Passage, indentured servants, Bacon’s Rebellion (1676), Chesapeake colonies, racial hierarchy",
+ 
+"B. The New England colonies, initially settled by Puritans, developed around small towns with family farms and achieved a thriving mixed economy of agriculture and commerce.<br />Examples:  Puritan work ethic, town meetings, expanded life expectancy in New England, social hierarchy, blue laws, subsistence farming, John Winthrop’s “city upon a hill”, Salem witch trials, trial of Anne Hutchinson, banishment of Roger Williams, establishment of Harvard College (1636)",
+                                   
+"C. The middle colonies supported a flourishing export economy based on cereal crops and attracted a broad range of European migrants, leading to societies with greater cultural, ethnic, and religious diversity and tolerance.<br />Examples:  William Penn, Quakers, religious toleration, “middle way”, ethnic diversity, “bread-basket colonies”",
+           
+"D. The colonies of the southernmost Atlantic coast and the British West Indies used long growing seasons to develop plantation economies based on exporting staple crops. They depended on the labor of enslaved Africans, who often constituted the majority of the population in these areas and developed their own forms of cultural and religious autonomy.<br />Examples: rice as cash crop in Georgia and the Carolinas, sugar as cash crop in Barbados, slave codes, Gullah, ring-shout, spirituals",
+ 
+"E. Distance and Britain’s initially lax attention led to the colonies creating self-governing institutions that were unusually democratic for the era. The New England colonies based power in participatory town meetings, which in turn elected members to their colonial legislatures; in the Southern colonies, elite planters exercised local authority and also dominated the elected assemblies.<br />Examples:  Mayflower Compact (1620), Maryland Toleration Act (1649), House of Burgesses, Massachusetts General Court",
+           
+"III. Competition over resources between European rivals and American Indians encouraged industry and trade and led to conflict in the Americas.",
+
+"A. An Atlantic economy developed in which goods, as well as enslaved Africans and American Indians, were exchanged between Europe, Africa, and theAmericas through extensive trade networks. European colonial economies focused on acquiring, producing, and exporting commodities that were valued in Europe and gaining new sources of labor.<br />Examples:  Triangular trade routes, direct trade routes, Middle Passage",
+           
+"B. Continuing trade with Europeans increased the flow of goods in and out of American Indian communities, stimulating cultural and economic changes and spreading epidemic diseases that caused radical demographic shifts.<br />Examples:  Praying towns, fur trade",
+           
+"C. Interactions between European rivals and American Indian populations fostered both accommodation and conflict. French, Dutch, British, and Spanish colonies allied with and armed American Indian groups, who frequently sought alliances with Europeans against other Indian groups.<br />Examples:  Beaver Wars of the mid-1600s, Chickasaw Wars of the mid-1700s, King William’s War (1688-1697), Queen Anne’s War (1702-1713), King George’s War (1744-1748)",
+           
+"D. The goals and interests of European leaders and colonists at times diverged, leading to a growing mistrust on both sides of the Atlantic. Colonists, especially in British North America, expressed dissatisfaction over issues including territorial settlements, frontier defense, self-rule, and trade.<br />Examples: Bacon’s Rebellion (1676), revocation of Massachusetts’ charter, Navigation Acts/smuggling, protests against the Dominion of New England",    
+
+"E. British conflicts with American Indians over land, resources, and political boundaries led to military confrontations, such as Metacom’s War (King Philip’s War) in New England.<br />Examples: Anglo-Powhatan Wars (1610-1640s), Pequot War (1636-1637), King Philip’s War (1675-1676)",
+
+"F. American Indian resistance to Spanish colonizing efforts in North America, particularly after the Pueblo Revolt, led to Spanish accommodation of some aspects of American Indian culture in the Southwest.<br />Examples: Caste system, mulattoes, mestizos, Pueblo Revolt (1680)"   
+    
+    ],
+
+[
+	"I. Transatlantic commercial, religious, philosophical, and political exchanges led residents of the British colonies to evolve in their political and cultural attitudes as they became increasingly tied to Britain and one another.",
+ 
+"A. The presence of different European religious and ethnic groups contributed to a significant degree of pluralism and intellectual exchange, which were later enhanced by the First Great Awakening and the spread of European Enlightenment ideas.<br />Examples: Great Awakening, Jonathan Edwards, George Whitefield, “new lights vs. old lights”, Enlightenment, John Locke"
+  
+ ,"B. The British colonies experienced a gradual Anglicization over time, developing autonomous political communities based on English models with influence from inter-colonial commercial ties, the emergence of a trans-Atlantic print culture, and the spread of Protestant evangelicalism.<br />Examples:  Anglicization, republicanism, salutary neglect, trial of John Peter Zenger"
+  
+ ,"C. The British government increasingly attempted to incorporate its North American colonies into a coherent, hierarchical, and imperial structure in order to pursue mercantilist economic aims, but conflicts with colonists and American Indians led to erratic enforcement of imperial policies.<br />Examples:  Mercantilism, Board of Trade, Navigation Act of the 1660s, Dominion of New England, Wool Act of 1699, Molasses Act of 1733"
+  
+ ,"D. Colonists’ resistance to imperial control drew on local experiences of self- government, evolving ideas of liberty, the political thought of the Enlightenment, greater religious independence and diversity, and an ideology critical of perceived corruption in the imperial system. <br />Examples:  Widespread smuggling, Dominion of New England/Edmond Andros, First Great Awakening (J. Edwards & G. Whitefield), John Locke"
+			
+ ,"II. Like other European empires in the Americas that participated in the Atlantic slave trade, the English colonies developed a system of slavery that reflected the specific economic, demographic, and geographic characteristics of those colonies."
+ 
+ ,"​A. All the British colonies participated to varying degrees in the Atlantic slave trade due to the abundance of land and a growing European demand forcolonial goods, as well as a shortage of indentured servants.  Small New England farms used relatively few enslaved laborers, all port cities held significant minorities of enslaved people, and the emerging plantation systems of the Chesapeake and the southernmost Atlantic coast had large numbers of enslaved workers, while the great majority of enslaved Africans were sent to the West Indies.<br />Examples:  Triangular trade, Middle Passage, plantation agriculture"
+			
+ ,"B. As chattel slavery became the dominant labor system in many southern colonies, new laws created a strict racial system that prohibited interracial relationships and defined the descendants of African American mothers as black and enslaved in perpetuity.<br />Examples:  Barbados slave code, Stone Rebellion of 1739, NYC slave revolt of 1741"
+			
+ ,"C. Africans developed both overt and covert means to resist the dehumanizing aspects of slavery and maintain their family and gender systems, culture, and religion.<br />Examples:  Work slowdowns, runaway slaves, NYC slave revolt (1711), Stono Rebellion (1739)"
+]
+	],
+//Unit 3
+[
+
+[
+   "I. The competition among the British, French, and American Indians for economic and political advantage in North America culminated in the Seven years’ War (the French and Indian War), in which Britain defeated France and allied American Indians.",
+
+   "A. Colonial rivalry intensified between Britain and France in the mid-18th century, as the growing population of the British colonies expanded into the interior of North America, threatening French–Indian trade networks and American Indian autonomy.<br />Examples:  French-Huron alliance, British-Iroquois alliance, French and Indian War, Albany Plan of Union, Treaty of Paris",
+           
+"B. Britain achieved a major expansion of its territorial holdings by defeating the French, but at tremendous expense, setting the stage for imperial efforts to raise revenue and consolidate control over the colonies.<br />Examples:  End of salutary neglect, writs of assistance, use of admiralty courts to try smugglers, virtual representation of Parliament",
+           
+"C. After the British victory, imperial officials’ attempts to prevent colonists from moving westward generated colonial opposition, while native groups sought to both continue trading with Europeans and resist the encroachments of colonists on tribal lands.<br />Examples:  Pontiac’s War, Proclamation of 1763, Iroquois Confederacy, Chief Little Turtle and the Western Confederacy (1793-1795)",
+           
+"II. The desire of many colonists to assert ideals of self-government in the face of renewed British imperial efforts led to a colonial independence movement and war with Britain",
+
+"A. The imperial struggles of the mid-18th century, as well as new British efforts to collect taxes without direct colonial representation or consent and to assert imperial authority in the colonies, began to unite the colonists against perceived and real constraints on their economic activities and political rights.<br />Examples:  Sugar Act (1764), Stamp Act (1765), Quartering Act (1765), Declaratory Act (1766), Townshend Acts (1767), Tea Act (1773), Intolerable Acts (1774), Quebec Act (1774)",
+           
+"B. Colonial leaders based their calls for resistance to Britain on arguments about the rights of British subjects, the rights of the individual, local traditions of self-rule, and the ideas of the Enlightenment.<br />Examples:  Taxation without representation, consent of the governed, republicanism, bicameral colonial legislatures, natural rights",
+           
+"C. The effort for American independence was energized by colonial leaders such as Benjamin Franklin, as well as by popular movements that included the political activism of laborers, artisans, and women.<br />Examples:  Otis Warren, Paul Revere, Mercy Otis Warren, John Hancock, Samuel Adams, John Adams, Sons of Liberty, Letters from a Farmer in Pennsylvania (John Dickinson), Stamp Act Congress (1765), Boston Tea Party, committees of correspondence, First and Second Continental Congress",
+           
+"D. In the face of economic shortages and the British military occupation of some regions, men and women mobilized in large numbers to provide financial and material support to the Patriot movement.<br />Examples:  Committees of Correspondence, Minutemen of Massachusetts",
+ 
+"E. Despite considerable loyalist opposition, as well as Great Britain’s apparently overwhelming military and financial advantages, the Patriot cause succeeded because of the actions of colonial militias and the Continental Army, George Washington’s military leadership, the colonists’ ideological commitment and resilience, and assistance sent by European allies.<br />Examples:  Battle of Trenton, Battle of Saratoga, French Alliance, Battle of Yorktown"
+
+    ],
+
+[
+	"I. The ideals that inspired the revolutionary cause reflected new beliefs about politics, religion, and society that had been developing over the course of the 18th century.",
+
+	"A. Enlightenment ideas and philosophy inspired many American political thinkers to emphasize individual talent over hereditary privilege, while religion strengthened Americans’ view of themselves as a people blessed with liberty.<br />Examples:  End of primogeniture laws, First Great Awakening, New Lights vs. Old Lights, consent of the governed, John Locke, Jean-Jacques Rousseau",
+
+"B. The colonists’ belief in the superiority of republican forms of government based on the natural rights of the people found expression in Thomas Paine’s Common Sense and the Declaration of Independence. The ideas in these documents resonated throughout American history, shaping Americans’ understanding of the ideals on which the nation was based.<br />Examples:  Common Sense, Declaration of Independence, republicanism, natural rights",
+
+"C. During and after the American Revolution, an increased awareness of inequalities in society motivated some individuals and groups to call for the abolition of slavery and greater political democracy in the new state and national governments.<br />Examples:  Quakers, Abigail Adams’ “remember the ladies”, Pennsylvania gradual emancipation law (1780), Vermont constitution abolished slavery, reduction of state property requirements to vote, abolition societies, separation of church and state, Virginia Statute for Religious Freedom (1786)",
+
+"D. In response to women’s participation in the American Revolution, Enlightenment ideas, and women’s appeals for expanded roles, an ideal of “republican motherhood” gained popularity. It called on women to teach republican values within the family and granted women a new importance in American political culture.<br />Examples:  Republican motherhood, improved education for women, republican virtues of liberty and natural rights",
+
+"E. The American Revolution and the ideals set forth in the Declaration of Independence reverberated in France, Haiti, and Latin America, inspiring future independence movements.<br />Examples:  French Revolution (1789-1799), US Neutrality Proclamation, Haitian Revolution (1791-1804)",
+ 
+"II. After declaring independence, American political leaders created new constitutions and declarations of rights that articulated the role of the state and federal governments while protecting individual liberties and limiting both centralized power and excessive popular influence.",
+ 
+"A. Many new state constitutions placed power in the hands of the legislative branch and maintained property qualifications for voting and citizenship.<br />Examples:  Conventions to ratify constitutions, fundamental laws, strong state legislatures combined with weak governors and courts",
+           
+"B. The Articles of Confederation unified the newly independent states, creating a central government with limited power. After the Revolution, difficulties over international trade, finances, interstate commerce, foreign relations, and internal unrest led to calls for a stronger central government.<br />Examples:  Unicameral legislature with no power to tax, draft soldiers, or regulate trade; lack of judicial or executive branch; tariff and currency disputes; Spanish restrictions on Mississippi River; British occupation of forts on US land; Shay’s Rebellion; Newburgh Conspiracy; Annapolis Convention",
+           
+"C.  Delegates from the states participated in a Constitutional Convention and through negotiation, collaboration, and compromise proposed a constitution that created a limited but dynamic central government embodying federalism and providing for a separation of powers between its three branches.<br />Examples:  Great (Connecticut) Compromise, checks and balances, separation of powers, Electoral College, Supreme Court, republicanism, federalism",
+           
+"D. The Constitutional Convention compromised over the representation of slave states in Congress and the role of the federal government in regulating both slavery and the slave trade, allowing the prohibition of the international slave trade after 1808.<br />Examples:  Three-fifths compromise, slave trade compromise, fugitive slave clause",
+
+"E. In the debate over ratifying the Constitution, Anti-Federalists opposing ratification battled with Federalists, whose principals were articulated in the Federalist Papers (primarily written by Alexander Hamilton and James Madison). Federalists ensured the ratification of the Constitution by promising the addition of a Bill of Rights that enumerated individual rights and explicitly restricted the powers of the federal government.<br />Examples:  Federalist Papers, Bill of Rights, Federalists vs. Anti-Federalists",
+
+"III. New forms of national culture and political institutions developed in the United States alongside continued regional variations and differences over economic, political, social, and foreign policy issues.",
+
+"A. During the presidential administrations of George Washington and John Adams, political leaders created institutions and precedents that put the principles of the Constitution into practice.<br />Examples:  Executive branch departments, Cabinet, Judiciary Act of 1789",
+                                   
+"B. Political leaders in the 1790s took a variety of positions on issues such as the relationship between the national government and the states, economic policy, foreign policy, and the balance between liberty and order. This led to the formation of political parties — most significantly the Federalists, led by Alexander Hamilton, and the Democratic-Republican Party, led by Thomas Jefferson and James Madison.<br />Examples:  Hamilton’s financial plan, creation of the Bank of the US, elastic clause, strict vs. loose interpretation of the Constitution, formation of the Federalist Party, formation of the Democratic-Republican Party, Alien and Sedition Acts, Kentucky and Virginia Resolutions by Jefferson and Madison",
+           
+"C. The expansion of slavery in the deep South and adjacent western lands and rising antislavery sentiment began to create distinctive regional attitudes toward the institution.<br />Examples:  Anti-slavery societies, limited rights of free blacks",
+                       
+"D. Ideas about national identity increasingly found expression in works of art, literature, and architecture.<br />Examples:  John Trumbull, Benjamin Banneker, US flag, growth of nationalism, Mercy Otis Warren’s History of the American Revolution, Autobiography of Benjamin Franklin"
+
+],
+
+[
+	"I. In the decades after American independence, interactions among different groups resulted in competition for resources, shifting alliances, and cultural blending.",
+
+	"A. Various American Indian groups repeatedly evaluated and adjusted their alliances with Europeans, other tribes, and the U.S., seeking to limit migration of white settlers and maintain control of tribal lands and natural resources. British alliances with American Indians contributed to tensions between the U.S. and Britain.<br />Examples:  March of the Paxton Boys, Battle of Fallen Timbers (1794), Treaty of Greenville (1795)",
+           
+"B. As increasing numbers of migrants from North America and other parts of the world continued to move westward, frontier cultures that had emerged in the colonial period continued to grow, fueling social, political, and ethnic tensions.<br />Examples:  Scots-Irish migration to the frontier, frontier vs. tidewater Virginia, Whiskey Rebellion, Regulator Movement",
+           
+"C. As settlers moved westward during the 1780s, Congress enacted the Northwest Ordinance for admitting new states; the ordinance promoted public education, the protection of private property, and a ban on slavery in the Northwest Territory.<br />Examples:  Land Ordinance of 1785, Northwest Ordinance of 1787, Section 16, equal statement, abolition of slavery in Northwest Territory",
+           
+"D. An ambiguous relationship between the federal government and American Indian tribes contributed to problems regarding treaties and American Indian legal claims relating to the seizure of their lands.<br />Examples:  Battle of Fallen Timbers, Treaty of Greenville",
+           
+"E. The Spanish, supported by the bonded labor of the local American Indians, expanded their mission settlements into California; these provided opportunities for social mobility among soldiers and led to new cultural blending.<br />Examples:  Expansion of Spanish missions in California, Spanish vacqueros (cowboys) of the Southwest, mestizos",
+           
+"II. The continued presence of European powers in North America challenged the United States to find ways to safeguard its borders, maintain neutral trading rights, and promote its economic interests.",
+
+"​A. The United States government forged diplomatic initiatives aimed at dealing with the continued British and Spanish presence in North America, as U.S. settlers migrated beyond the Appalachians and sought free navigation of the Mississippi River.<br />Examples:  Spanish control of Mississippi River, British occupation of US forts, impressment of US sailors, Jay Treaty (1794), Pinckney Treaty (1795)",
+           
+"B. War between France and Britain resulting from the French Revolution presented challenges to the United States over issues of free trade and foreign policy and fostered political disagreement.<br />Examples:  French Revolution, US Proclamation of Neutrality, Citizen Genet Affair, XYZ Affair (1797-1798), Quasi-war with France, Convention of 1800",
+           
+"C. George Washington’s Farewell Address encouraged national unity, as he cautioned against political factions and warned about the danger of permanent foreign alliances.<br />Examples:  Political disagreements about aid to the French Revolution and the establishment of the Bank of the US, Farewell Address warned against entangling alliances and political parties."
+
+]
+	],
+//Unit 4
+[
+
+[
+  "I. The nation’s transformation to a more participatory democracy was achieved by expanding suffrage from a system based on property ownership to one based on voting by all adult white men, and it was accompanied by the growth of political parties.", 
+
+  "A. In the early 1800s, national political parties continued to debate issues such as the tariff, powers of the federal government, and relations with European powers.<br />Examples:  Election of 1800 (“Revolution of 1800”), First Party System,  Louisiana Purchase (1803), 12th Amendment (1804), War with Tripoli (1801-1805), Chesapeake Leopard Affair (1807), Embargo Act of 1807,  Non-intercourse Act (1809), Macon’s Bill #2 (1810), “War Hawks”, War of 1812 (impressment, desire for Canada, British occupation of US forts, British aid to Indians), Federalists and the Hartford Convention (1814), Treaty of Ghent (1815), Henry Clay’s “American System”, protective tariff of 1816, Second Band of the US, Era of Good Feelings, Madison’s veto of Bonus Bill (1817)",
+ 
+"B. Supreme Court decisions established the primacy of the judiciary in determining the meaning of the Constitution and asserted that federal laws took precedence over state laws.<br />Examples:  John Marshall, Marbury v. Madison, McCullough v. Maryland, Worcester v. Georgia, Gibbons v. Ogden, Dartmouth College v. Woodward",
+ 
+"C. By the 1820s and 1830s, new political parties arose — the Democrats, led, by Andrew Jackson, and the Whigs, led by Henry Clay — that disagreed about the role and powers of the federal government and issues such as the national bank, tariffs, and federally funded internal improvements.<br />Examples:  Corrupt bargain of 1824, Second Party System, opposition of Whigs to Democrat “King Andrew”, end of property requirements to vote by 1828, Jackson’s use of spoils system, universal manhood suffrage, “Age of the Common Man”, Webster Hayne Debate of 1830, Jackson’s veto of Maysville Road (1830), Jackson’s veto of Second Bank of US re-charter, Jackson’s use of “pet banks”, South Carolina Exposition and Protest by John Calhoun (1828), South Carolina nullification of Tariffs of 1828 and 1832, Jackson’s “Force Act” of 1833, Compromise Tariff of 1833",
+ 
+"D. Regional interests often trumped national concerns as the basis for many political leaders’ positions on slavery and economic policy.<br />Examples:  John Calhoun’s “positive good” arguments, Missouri Compromise of 1820, sectional balance in the Senate, Indian Removal Act of 1830, South Carolina nullification of Tariffs of 1828 and 1832, Jackson’ Force Act of 1833, Compromise Tariff of 1833",
+           
+"II. While Americans embraced a new national culture, various groups developed distinctive cultures of their own.",
+
+"A. The rise of democratic and individualistic beliefs, a response to rationalism, and changes to society caused by the market revolution, along with greater social and geographical mobility, contributed to a Second Great Awakening among Protestants that influenced moral and social reforms and inspired utopian and other religious movements.<br />Examples:  Charles Finney, Seneca Falls Convention (1848), Utopian communities (Brook Farm, Shakers, Mormons, Oneida), American, American Temperance Society, Dorothea Dix and prison reform, Horace Mann and education reform",
+           
+"B. A new national culture emerged that combined American elements, European influences, and regional cultural sensibilities.<br />Examples:  Hudson River School of art; transcendental writers such as Ralph Waldo Emerson and Henry David Thoreau; James Audubon, Knickerbocker writers such as Washington Irving and James Fenimore Cooper; Noah Webster’s American Dictionary of the English Language (1828)",
+ 
+"C. Liberal social ideas from abroad and Romantic beliefs in human perfectibility influenced literature, art, philosophy, and architecture.<br />Examples:  Romanticism, transcendentalism, Federal style of architecture, Thomas Jefferson’s rotunda",
+ 
+"D. Enslaved blacks and free African Americans created communities and strategies to protect their dignity and family structures, and they joined political efforts aimed at changing their status.<br />Examples:  surrogate families; covert resistance (work slowdowns, sabotage, and runaways); spirituals; Richard Allen’ African Methodist Episcopal Church (1816) ; American Colonization Society (1816); Benjamin Lunch’s Genius of Universal Emancipation (gradual emancipation); David Walker’s Appeal to the Colored Citizens of the World (1829); William Lloyd Garrison’s “immediate and uncompensated” emancipation; American Anti-slavery Society (1833); Garrison’s Liberator (1831); Underground Railroad; Sojourner Truth; Frederick Douglass’ North Star (1847); Liberty Party (1840)",
+           
+"III. Increasing numbers of Americans, many inspired by new religious and intellectual movements, worked primarily outside of government institutions to advance their ideals.", 
+
+"A. Americans formed new voluntary organizations that aimed to change individual behaviors and improve society through temperance and other reform efforts.<br />Examples:  American Temperance Society, American Anti-slavery Society, Seneca Falls Convention and the Declaration of Sentiments, Oberlin College",
+           
+"B. Abolitionist and antislavery movements gradually achieved emancipation in the North, contributing to the growth of the free African American population, even as many state governments restricted African Americans’ rights. Antislavery efforts in the South were largely limited to unsuccessful slave rebellions.<br />Examples:  American Colonization Society, William Lloyd Garrison’s “immediate and uncompensated” emancipation, gradual emancipation, Denmark Vesey’s rebellion, Nat Turner’s rebellion",
+ 
+"C. A women’s rights movement sought to create greater equality and opportunities for women, expressing its ideals at the Seneca Falls Convention.<br />Examples:  Seneca Falls Convention, Declaration of Sentiments, Lucretia Mott, Elizabeth Cady Stanton"
+
+    ],
+
+[
+	"I. New transportation systems and technologies dramatically expanded manufacturing and agricultural production.",
+
+	"A. Entrepreneurs helped to create a market revolution in production and commerce, in which market relationships between producers and consumers cameto prevail as the manufacture of goods became more organized.<br />Examples:  John Deere’s steel plow, Cyrus McCormick’s mechanical reaper, Samuel Slater “Father of American Factory System”, Eli Whitney’s cotton gin and interchangeable part, Samuel Morse and the telegraph, Robert Fulton’s Clermont steamboat, Lowell system, Baldwin Locomotive Works of Pennsylvania",
+           
+"B. Innovations including textile machinery, steam engines, interchangeable parts, the telegraph, and agricultural inventions increased the efficiency of production methods.<br />Examples:  Lowell system, steam locomotives, steamboats, spinning jenny, steamboats, interchangeable parts, cotton gin, telegraph, steel plow, mechanical reaper, improved roads/turnpikes",
+           
+"C. Legislation and judicial systems supported the development of roads, canals, and railroads, which extended and enlarged markets and helped foster regional interdependence. Transportation networks linked the North and Midwest more closely than either was linked to the South.<br />Examples:  Lancaster Turnpike, regional specialization and interdependence, Erie Canal, Canal Era, Henry Clay’s American System, Cumberland (National) Road, protective tariff of 1816, Charles River Bridge v. Warren Bridge (1837)",
+         
+"II. The changes caused by the market revolution had significant effects on U.S. society, workers’ lives, and gender and family relations.", 
+ 
+"A. Increasing numbers of Americans, especially women and men working in factories, no longer relied on semi-subsistence agriculture; instead they supported themselves producing goods for distant markets.<br />Examples:  Lowell mills, Industrial Revolution, factory system",
+           
+"B. The growth of manufacturing drove a significant increase in prosperity and standards of living for some; this led to the emergence of a larger middle class and a small but wealthy business elite but also to a large and growing population of laboring poor.<br />Examples:  Income gap, social hierarchy, plantation aristocracy, “Yankee traders”, National Trades Union, Commonwealth v. Hunt",
+           
+"C. Gender and family roles changed in response to the market revolution, particularly with the growth of definitions of domestic ideals that emphasized the separation of public and private spheres.<br />Examples:  Cult of domesticity, Lydia Child challenged cult of domesticity, Elizabeth Blackwell, Sojourner Truth’s Ain’t I a Woman?, Grimke sisters",
+           
+"III. Economic development shaped settlement and trade patterns, helping to unify the nation while also encouraging the growth of different regions.",
+
+"A. Large numbers of international migrants moved to industrializing northern cities, while many Americans moved west of the Appalachians, developing thriving new communities along the Ohio and Mississippi rivers.<br />Examples:  Erie Canal, Lancaster Turnpike, German immigration, Irish immigration, Midwest farm goods traded for New England factory goods",
+
+"B. Increasing Southern cotton production and the related growth of Northern manufacturing, banking, and shipping industries promoted the development of national and international commercial ties.<br />Examples:  “King Cotton”, protective tariffs, textile industry, whaling and fishing industry, “Yankee traders”, Treaty of Wanghia (1844) expanded trade with China",
+ 
+"C. Southern business leaders continued to rely on the production and export of traditional agricultural staples, contributing to the growth of a distinctive Southern regional identity.<br />Examples:  Slow urban growth, planter aristocracy (“cottonocracy”), growth of the internal slave trade",
+           
+"D. Plans to further unify the U.S. economy, such as the American System, generated debates over whether such policies would benefit agriculture or industry, potentially favoring different sections of the country.<br />Examples:  Protective tariffs of 1816 and 1824, Madison’s veto of the Bonus Bill, internal improvements, Cumberland (National) Road, Jackson’s veto of the Maysville Road, Second Bank of the US"
+
+],
+
+[
+	"I. Struggling to create an independent global presence, the United States sought to claim territory throughout the North American continent and promote foreign trade.",
+
+	"A. Following the Louisiana Purchase, the United States government sought influence and control over North America and the Western Hemisphere through a variety of mean, including exploration, military actions, American Indian removal, and diplomatic efforts such as the Monroe Doctrine.<br />Examples:  Rush Bagot Treaty (1817), Convention of 1818, Adams Onis Treaty (1819), Monroe Doctrine (1823), dispute over annexation of Texas (1836-1845), annexation of Texas by joint resolution (1845), Webster Ashburton Treaty (1842), Oregon Treaty with Britain (1846), Mexican American War (1846-1848), Manifest Destiny",
+           
+"B. Frontier settlers tended to champion expansion efforts, while American Indian resistance led to a sequence of wars and federal efforts to control and relocate American Indian populations.<br />Examples:  Tecumseh’s Confederacy (1808-1813), Battle of Tippecanoe (1811), First Seminole War (1816-1818), Indian Removal Act (1830), Trail of Tears, Second Seminole War (1835-1842), Indian Territory",
+           
+"II. The United States’ acquisition of lands in the West gave rise to contests over the extension of slavery into new territories.",
+
+"A. As over-cultivation depleted arable land in the Southeast, slaveholders began relocating their plantations to more fertile lands west of the Appalachians, where the institution of slavery continued to grow.<br />Examples:  Cotton gin and growth of upland (short-staple) cotton, growth of the internal slave trade",
+           
+"B. Antislavery efforts increased in the North, while in the South, although the majority of Southerners owned no slaves, most leaders argued that slavery was part of the Southern way of life.<br />Examples:  John Calhoun’s “positive good” arguments, Biblical justifications for slavery, Constitutional justifications for slavery (fugitive slave clause and three-fifths clause)",
+                       
+"C. Congressional attempts at political compromise, such as the Missouri Compromise, only temporarily stemmed growing tensions between opponents and defenders of slavery.<br />Examples:  Jefferson’s “firebell in the night” warning (1820), Webster Hayne Debate (1830) dispute over annexation of Texas (1836-1845), gag rule, Wilmot Proviso (1846)"
+
+]
+	],
+//Unit 5
+[
+
+[
+   "I. Popular enthusiasm for U.S. expansion, bolstered by economic and security interests, resulted in the acquisition of new territories, substantial migration westward, and new overseas initiatives.", 
+
+   "A. The desire for access to natural and mineral resources and the hope of many settlers for economic opportunities or religious refuge led to an increased migration to and settlement in the West.<br />Examples:  Mormon settlements in Utah (1847), California gold rush (1848), Chinese immigration, Comstock Lode - silver mining in Nevada (1859), Pike’s Peak gold rush (1858-1861), decline of the buffalo",
+ 
+"B. Advocates of annexing western lands argued that Manifest Destiny and the superiority of American institutions compelled the United States to expand its borders westward to the Pacific Ocean.<br />Examples: Manifest Destiny, Election of 1844, Slidell Mission (1845), US annexation of Texas (1845), Bear Flag Revolt (1846), Oregon Boundary Treaty (1846), Treaty of Guadalupe Hidalgo (1848), Gadsden Purchase (1853), Pony Express (1860-1861)", 
+
+"C. The U.S. added large territories in the West through victory in the Mexican–American War and diplomatic negotiations, raising questions about the status of slavery, American Indians, and Mexicans in the newly acquired lands.<br />Examples:  Wilmot Proviso (1846), Lincoln’s spot resolutions (1846), Free Soil Party (1848), Civil Disobedience by Henry David Thoreau (1849), popular sovereignty, Ostend Manifesto (1854)",
+ 
+"D. Westward migration was boosted during and after the Civil War by the passage of new legislation promoting Western transportation and economic development.<br />Examples:  Gadsden Purchase (1853), Pacific Railway Act (1862), Homestead Act (1862), Homestead Act (1862), Morrill Land Grant Act (1862), completion of the Union Pacific Railroad (1869)",
+ 
+"E. U.S. interest in expanding trade led to economic, diplomatic, and cultural initiatives to create more ties with Asia.<br />Examples:  Clipper ships, Treaty of Wanghia (1846), Commodore Perry’s expedition to Japan (1852-1854), missionaries",
+ 
+"II. In the 1840s and 1850s, Americans continued to debate questions about rights and citizenship for various groups of U.S. inhabitants.",
+
+"A. Substantial numbers of international migrants continued to arrive in the United States from Europe and Asia, mainly from Ireland and Germany, often settling in ethnic communities where they could preserve elements of their languages and customs.<br />Examples:  Old Immigration from North and Western Europe, Irish potato famine (1845-1851), parochial schools",
+           
+"B. A strongly anti-Catholic nativist movement arose that was aimed at limiting new immigrants’ political power and cultural influence.<br />Examples:  Know-Nothing movement (1840s and 1850s), American Party (1854)",
+ 
+"C. U.S. government interaction and conflict with Mexican Americans and American Indians increased in regions newly taken from American Indians and Mexico, altering these groups’ economic self-sufficiency and cultures.<br />Examples:  Sand Creek Massacre (1864), Battle of Little Big Horn (Custer’s Last Stand - 1876), reservation system, Mariano Vallejo"
+
+    ],
+
+[
+	"I. Ideological and economic differences over slavery produced an array of diverging responses from Americans in the North and the South.",
+
+	"A. The North’s expanding manufacturing economy relied on free labor in contrast to the Southern economy’s dependence on slave labor. Some Northerners did not object to slavery on principle but claimed that slavery would undermine the free labor market. As a result, a free-soil movement arose that portrayed the expansion of slavery as incompatible with free labor.<br />Examples:  Bessemer process (1855), Oil drilling in Titusville, Pennsylvania (1859), Free Soil Party (1848-1852), Hinton Helper’s Impending Crisis of the South (1857)",
+           
+"B. African American and white abolitionists, although a minority in the North, mounted a highly visible campaign against slavery, presenting moral arguments against the institution, assisting slaves’ escapes, and sometimes expressing a willingness to use violence to achieve their goals.<br />Examples:  William Lloyd Garrison’s Liberator and the American Antislavery Society, Liberty Party (1840-1844), Underground Railroad, Harriet Tubman (1849), Harriet Beecher Stowe’s Uncle Tom’s Cabin (1852), John Brown’s Raid on Harper’s Ferry (1859)",         
+ 
+"C. Defenders of slavery based their arguments on racial doctrines, the view that slavery was a positive social good, and the belief that slavery and states’ rights were protected by the Constitution.<br />Examples:  “positive good” thesis, John C. Calhoun, states’ rights, nullification, George Fitzhugh’s Cannibals All! (1857), minstrel shows",
+ 
+"II. Debates over slavery came to dominate political discussion in the 1850s, culminating in the bitter election of 1860 and the secession of Southern states.",
+
+"A. The Mexican Cession led to heated controversies over whether to allow slavery in the newly acquired territories.<br />Examples:  end of gag rule (1844), Wilmot Proviso (1846), Mexican Cession (1848), popular sovereignty",
+ 
+"B. The courts and national leaders made a variety of attempts to resolve the issue of slavery in the territories, including the Compromise of 1850, the Kansas–Nebraska Act, and the Dred Scott decision, but these ultimately failed to reduce conflict.   <br />Examples:  Compromise of 1850, Fugitive Slave Act (1850), personal liberty laws, Kansas Nebraska Act (1854), “Crime against Kansas Speech” by Charles Sumner and attack by Preston Brooks (1856), Pottawatomie Creek, Dispute over Lecompton Constitution (1857), Bleeding Kansas (1856-1861), Dred Scott Supreme Court decision (1857)",
+ 
+"C. The Second Party System ended when the issues of slavery and anti-immigrant nativism weakened loyalties to the two major parties and fostered the emergence of sectional parties, most notably the Republican Party in the North.<br />Examples:  Formation of the Republican Party (1854), Lincoln’s support of free soil doctrine, Lincoln’s “House Divided Speech” (1858), Lincoln-Douglas debates (1858), Freeport Doctrine (1858)",
+ 
+"D. Abraham Lincoln’s victory on the Republicans’ free-soil platform in the election of 1860 was accomplished without any Southern electoral votes. After a series of contested debates about secession, most slave states voted to secede from the Union, precipitating the Civil War.​<br />Examples:  Secession of seven southern states (1860-1861), Crittenden Compromise rejected (1860-1861), Fort Sumter and secession of four additional southern states (1861), Lincoln’s call for troops"
+
+],
+
+[
+	"I. The North’s greater manpower and industrial resources, the leadership of Abraham Lincoln and others, and the decision to emancipate slaves eventually led to the Union military victory over the Confederacy in the devastating Civil War.",
+
+	"A. Both the Union and the Confederacy mobilized their economies and societies to wage the war even while facing considerable home front opposition.<br />Examples:  Lincoln’s suspension of habeas corpus (1861), Morrill Tariff (1861), Southern Conscription Act (1862), National Bank Act (1863), Northern Conscription Act of 1863, “rich man’s war but a poor man’s fight”, NYC draft riots (1863), Radical Republicans, War Democrats, Peace Democrats, Copperheads, Order of the Sons of Liberty (1864)", 
+ 
+"B. Lincoln and most Union supporters began the Civil War to preserve the Union, but Lincoln’s decision to issue the Emancipation Proclamation reframed the purpose of the war and helped prevent the Confederacy from gaining full diplomatic support from European powers. Many African Americans fled southern plantations and enlisted in the Union Army, helping to undermine the Confederacy.<br />Examples:  Trent Affair (1861), Alabama commerce raider (1862), Emancipation Proclamation (1863), enlistment of African Americans, Massachusetts 54th Regiment (1863)",
+
+"C. Lincoln sought to reunify the country and used speeches such as the Gettysburg Address to portray the struggle against slavery as the fulfillment of America’s founding democratic ideals.<br />Examples:  Battle of Gettysburg, Gettysburg Address (1863), “Four score and seven years…”",
+
+"D. Although the Confederacy showed military initiative and daring early in the war, the Union ultimately succeeded due to improvements in leadership and strategy, key victories, greater resources, and the wartime destruction of the South’s infrastructure..<br />Examples:  Anaconda Plan (1861), Antietam (1862), Gettysburg (1863), Vicksburg (1863), Union’s “total war” strategy, Sherman’s March to the Sea (1864), Lee’s surrender at Appomattox Courthouse (1865)",
+
+"II. Reconstruction and the Civil War ended slavery, altered relationships between the states and the federal government, and led to debates over new definitions of citizenship, particularly regarding the rights of African Americans, women, and other minorities.",  
+
+"A. The 13th Amendment abolished slavery, while the 14th and15th Amendments granted African Americans citizenship, equal protection under the laws, and voting rights.  <br />Examples:  13th Amendment (1865), 14th Amendment (1868), 15th Amendment (1870)",
+ 
+"B. The women’s rights movement was both emboldened and divided over the 14th and 15th amendments to the Constitution.<br />Examples:  Opposition of Elizabeth Cady Stanton and Susan B. Anthony, National Women’s Suffrage Association (1869), American Women’s Suffrage Association (1869)",
+ 
+"C. Efforts by radical and moderate Republicans to change the balance of power between Congress and the presidency and to reorder race relations in the defeated South yielded some short-term successes. Reconstruction opened up political opportunities and other leadership roles to former slaves, but it ultimately failed, due both to determined Southern resistance and the North’s waning resolve.<br />Examples:  Black codes, Ku Klux Klan (1866), Presidential vs. Radical Reconstruction (1865-1867), Military Reconstruction (1867-1877), carpetbaggers, scalawags, Senator Hiram Revels, Senator Blache K Bruce, Representative Robert Smalls, Johnson’s veto of Freedman’s Bureau and Civil Rights Act of 1866, Tenure of Office Act (1867), impeachment of President Johnson (1868), Redeemer governments (Solid South), Enforcement Acts (1870-1871)",
+ 
+"D. Southern plantation owners continued to own the majority of the region’s land even after Reconstruction. Former slaves sought land ownership but generally fell short of self-sufficiency, as an exploitative and soil-intensive sharecropping system limited blacks’ and poor whites’ access to land in the South.<br />Examples:  black codes, sharecropping, tenant farming, crop-lien system, peonage system, Freedmen’s Bureau (1865)",
+
+"E. Segregation, violence, Supreme Court decisions, and local political tactics progressively stripped away African American rights, but the 14th and 15th Amendments eventually became the basis for court decisions upholding civil rights in the 20th century.<br />Examples:  Compromise of 1877, poll taxes, literacy tests to vote, Jim Crow laws, grandfather clauses. Civil Rights Cases (1883), Plessy v. Ferguson (1896)"
+
+]
+	],
+//Unit 6
+[
+
+[
+"I. Large-scale industrial production — accompanied by massive technological change, expanding international communication networks, and pro-growth government policies — generated rapid economic development and business consolidation.",
+
+"A. Following the Civil War, government subsidies  for transportation and communication systems helped open new markets in North America.<br />Examples:  Federal and state loans and land grants to transcontinental railroads, Credit Mobilier Scandal, transatlantic telegraph cable (1866)",
+ 
+"B. Businesses made use of technological innovations, greater access to natural resources, redesigned financial and management structures, advances  in marketing, and a growing labor force to dramatically increase the production of goods.<br />Examples: John D. Rockefeller (oil), J.P. Morgan (banking), Andrew Carnegie (Bessemer steel), Alexander Graham’s Bell (telephone), Cornelius Vanderbilt (railroads), Cyrus Field (transatlantic telegraph), Montgomery Ward mail order catalog",        
+
+"C. As the price of many goods decreased, workers’ real wages increased, providing new access to a variety of goods and services; many Americans’ standards of living improved, while the gap between rich and poor grew.<br />Examples:  Gilded Age by Mark Twain (1873), Boss Tweed (1869-1876), tenement housing, Century of Dishonor by Helen Hunt Jackson (1881), How the Other Half Lives by Jacob Riis (1890)",
+ 
+"D. Many business leaders sought increased profits by consolidating corporations into large trusts and holding companies, which further concentrated wealth.<br />Examples:  near monopoly, Standard Oil Trust (1882), holding company, business pool, horizontal integration, vertical integration",
+ 
+"E. Businesses and foreign policymakers increasingly looked outside U.S. borders in an effort to gain greater influence and control over markets and natural resources in the Pacific Rim, Asia, and Latin America.<br />Examples:  Purchase of Alaska (1867), Influence of Sea Power upon History by Alfred T. Mahan (1890) Turner Thesis (1893), Treaty of Paris (1898) and the acquisition of Puerto Rico, Guam, and the Philippines, annexation of Hawaii (1898), John Hay’s Open Door Note (1899)",
+ 
+"II. A variety of perspectives on the economy and labor developed during a time of financial panics and downturns.",
+
+"A. Some argued that laissez-faire policies and competition promoted economic growth in the  long run, and they opposed government intervention during economic downturns.<br />Examples:  Laissez faire policies, Panic of 1873, Panic of 1893, Social Darwinism, Horatio Alger’s “rags to riches” dime novels, Andrew Carnegie’s Gospel of Wealth (1899), philanthropy",
+ 
+"B. The industrial workforce expanded and became more diverse through internal and international migration; child labor also increased.<br />Examples:  Farm mechanization led to increased migration to cities, “New Immigration” from Southern and Eastern Europe, Chinese immigration",
+ 
+"C. Labor and management battled over wages and working conditions, with local workers organizing local and national unions and/or directly confronting business leaders.<br />Examples:  Knights of Labor (1869), Terrence Powderly, Haymarket Square riot (1886), American Federation of Labor (1886), Samuel Gompers, “bread and butter” unionism, Mother Jones’ “March of the Children” (1903), yellow dog contracts, blacklists, Railway Strike of 1877, Homestead Strike of 1892, Pullman Strike of 1894",
+ 
+"D. Despite the industrialization of some segments of the Southern  economy — a change promoted by Southern leaders who called for a “New South” — agriculture based on sharecropping and tenant farming continued  to be the primary economic activity in the South.<br />Examples:  “New South”, Henry Grady, textile mills in the South, James Duke",
+ 
+"III. New systems of production and transportation enabled consolidation within agriculture, which, along with periods of instability, spurred a variety of responses from farmers.",  
+
+"A. Improvements in mechanization helped agricultural production increase substantially and contributed to declines in food prices.<br />Examples:  Reapers, combines, bonanza farming, dry farming, barbed wire",
+ 
+"B. Many farmers responded to the increasing consolidation in agricultural markets and their dependence on the evolving railroad system by creating local and regional cooperative organizations.<br />Examples: Grange (1867), Granger laws, Wabash v. Illinois (1886), Southern Farmers’ Alliance (1875), National Farmers’ Alliance (1877), Colored Farmers’ Alliance (1886)",
+
+"C. Economic instability inspired agrarian activists to create the People’s (Populist) Party, which called for a stronger governmental role in regulating the American economic system.<br />Examples:  Ocala Platform of 1890, goals of the Populist Party, “free silver” movement, William Jennings Bryan"
+
+    ],
+
+[
+	"I. International and internal migrations increased both urban and rural populations, but gender, racial, ethnic, religious, and socioeconomic inequalities abounded, inspiring some reformers to attempt to address these inequities.",
+
+	"A. As cities became areas of economic growth featuring new factories and businesses, they attracted immigrants from Asia and from southern and eastern Europe, as well as African American migrants within  and out of the South. Many migrants moved to escape poverty, religious persecution, and limited opportunities for social mobility in their home countries or regions<br />Examples:  Pap Singleton and the Exodusters (1879), New Immigration from Southern and Eastern Europe, Chinese immigration",
+ 
+"B. Urban neighborhoods based on particular ethnicities, races, and classes provided new cultural opportunities for city dwellers.<br />Examples:  Chinatowns, “Little Italy”",
+ 
+"C. Increasing public debates over assimilation and Americanization accompanied the growth of international migration. Many immigrants negotiated compromises between the cultures they brought and the culture they found in the United States.<br />Examples:  Assimilation, Ellis Island, Angel Island",
+ 
+"D. In an urban atmosphere where the access to power was unequally distributed, political machines thrived, in part by providing immigrants and the poor with social services.<br />Examples:  National American Woman Suffrage Association (1890), Women’s Christian Temperance Union (1874), Tammany Hall political machine, settlement houses, Jane Addams and Hull House (1889), General Federation of Women’s Clubs (1890)",
+ 
+"E. Corporations’ need for managers and for male and female clerical workers as  well as increased access to educational institutions, fostered the growth of a distinctive middle class. A growing amount of leisure time also helped expand consumer culture.<br />Examples:   Conspicuous consumption, Harvard Annex for women (1879), Bryn Mawr College (1885)",
+ 
+"II. Larger numbers of migrants moved to the West in search of land and economic opportunity, frequently provoking competition and violent conflict.",
+
+"A. The building of transcontinental railroads, the discovery of mineral resources, and government policies promoted economic growth and created new communities and centers of commercial activity.<br />Examples:  Pacific Railway Acts (1862 to 1866), federal and state government subsidies to transcontinental railroads, cattle trails, cow towns",
+ 
+"B. In hopes of achieving ideals of self-sufficiency and independence, migrants moved to both rural and boomtown areas of the West for opportunities, such as building the railroads, mining, farming, and ranching.<br />Examples:  Silver boom in Tombstone (1877-1890), Abilene, Buffalo Bill Cody’s Wild West show, Frederic Remington’s paintings, Edward Wheeler’s Deadwood Dick “dime novels”, “range wars”",
+ 
+"C. As migrant populations increased in number and the American bison population was decimated, competition for land and resources in the West among white settlers, American Indians, and Mexican Americans led to an increase in violent conflict.<br />Examples:  Sand Creek Massacre, Battle of Little Big Horn (1876), Battle of Bear Paw Mountain, Battle of Wounded Knee (1890)",
+
+"D. The U.S. government violated treaties with American Indians and responded to resistance with military force, eventually confining American Indians to reservations and denying tribal sovereignty.<br />Examples:  Surrender of Chief Joseph (1877), Surrender of Apaches led by Geronimo (1887), Great Sioux Reservation",
+
+"E. Many American Indians preserved their cultures and tribal identities despite government policies promoting assimilation, and they attempted to develop self-sustaining economic practices.<br />Examples:  Carlisle Indian School (1879), Dawes Act (1887), Ghost Dance movement (1890)"
+
+],
+
+[
+	"I. New cultural and intellectual movements both buttressed and challenged the social order of the Gilded Age.",
+
+	"A. Social commentators advocated theories later described as Social Darwinism to justify the success of those at the  top of the socioeconomic structure as both appropriate and inevitable.<br />Examples:  Social Darwinism, laissez faire policies, Russell Conwell’s Acres of Diamonds sermon, Horatio Alger’s “rags to riches” dime novels, American Protective Association (1887), Chinese Exclusion Act (1882)",
+
+"B. Some business leaders argued that the wealthy  had a moral obligation  to help the less fortunate and improve society, as articulated in the idea known as the Gospel of Wealth, and they made philanthropic contributions that enhanced educational opportunities and urban environments.<br />Examples:  Andrew Carnegie’s Gospel of Wealth (1899), Carnegie public libraries, Stanford University, Vanderbilt University",
+ 
+"C. A number of artists and critics, including agrarians, utopians, socialists, and advocates of the Social Gospel, championed alternative visions for the economy and U.S. society.<br />Examples:  Gilded Age by Mark Twain (1873), Henry George’s “single land tax” in Progress and Poverty (1879), Century of Dishonor by Helen Hunt Jackson (1881), Edward Bellamy’s “utopian socialism” in Looking Backward (1888), Andrew Carnegie’s Gospel of Wealth (1889), How the Other Half Lives by Jacob Riis (1890), social gospel movement (1890), Jacob Coxey’s “March on Washington” (1894)",
+ 
+"II. Dramatic social changes in the period inspired political debates over citizenship, corruption, and the proper relationship between business and government.",
+ 
+"A. The major political parties appealed to lingering divisions from the Civil War and contended over tariffs and currency issues, even as reformers argued that economic greed and self-interest had corrupted all levels of government.<br />Examples:  patronage vs. civil service reform, Pendleton Civil Service Act (1883), regulation of railroads, Interstate Commerce Act (1887), McKinley Tariff of 1890, “free silver” issue, Sherman Silver Purchase Act (1890), Greenback Labor Party (1874-1889), National Farmers’ Alliance, Populist Party (1891), regulation of trusts, Sherman Antitrust Act (1890)",
+ 
+"B. Many women sought greater equality with men, often joining voluntary organizations, going to college, promoting social and political reform, and, like Jane Addams, working in settlement houses to help immigrants adapt to U.S. language and customs.<br />Examples:  settlement houses, Jane Addams’ Hull House, “good government” movement, National American Woman Suffrage Association (1890), Elizabeth Cady Stanton, Susan B. Anthony, Carrie Catt, Margaret Sanger, coed colleges, normal schools, “city beautiful” movement",
+ 
+"C. The Supreme Court decision in Plessy v. Ferguson that upheld racial segregation helped to mark the end of most of the political gains African Americans made during Reconstruction. Facing increased violence, discrimination, and scientific theories of race, African American reformers continued to fight for political and social equality.<br />Examples:  Jim Crow laws, poll taxes, grandfather clauses, literacy tests to vote, Impact of Plessy v. Ferguson, Booker T. Washington’s Atlanta Compromise (1895), Ida Wells-Barnett’s anti-lynching crusade, National Association of Colored Women (1896), Paul Lawrence Dunbar’s Lyrics of Lowly Life (1896), George Washington Carver"
+
+]
+	],
+//Unit 7
+[
+
+[
+  "I. The United States continued its transition from a rural, agricultural economy to an urban, industrial economy led by large companies.",
+
+"A. New technologies and manufacturing techniques helped focus the U.S. economy on the production of consumer goods, contributing to improved standards of living, greater personal mobility, and better communications systems.",
+
+"B. By 1920, a majority of the U.S. population lived in urban centers, which offered new economic opportunities for women, international migrants, and internal migrants.",
+
+"C. Episodes of credit and market instability in the early 20th century, in particular the Great Depression, led to calls for a stronger financial regulatory system.",
+
+"II. In the Progressive Era of the early 20th century, Progressives responded to political corruption, economic instability, and social concerns by calling for greater government action and other political and social measures.",
+
+"A. Some Progressive Era journalists attacked what they saw as political corruption, social injustice, and economic inequality, while reformers, often from the middle and upper classes and including many women, worked to effect social changes in cities and among immigrant populations.",
+
+"B. On the national level, Progressives sought federal legislation that they believed would effectively regulate the economy, expand democracy, and generate moral reform. Progressive amendments to the Constitution dealt with issues such as prohibition and woman suffrage.",
+
+"C. Preservationists and conservationists both supported the establishment of national parks while advocating different government responses to the overuse of natural resources.",
+
+"D. The Progressives were divided over many issues. Some Progressives supported Southern segregation, while others ignored its presence. Some Progressives advocated expanding popular participation in government, while others called for greater reliance on professional and technical experts to make government more efficient. Progressives also disagreed about immigration restriction.",
+
+"III. During the 1930s, policymakers responded to the mass unemployment and social upheavals of the Great Depression by transforming the U.S. into a limited welfare state, redefining the goals and ideas of modern American liberalism.",
+
+"A. Franklin Roosevelt’s New Deal attempted to end the Great Depression by using government power to provide relief to the poor, stimulate recovery, and reform the American economy.",
+
+"B. Radical, union, and populist movements pushed Roosevelt toward more extensive efforts to change the American economic system, while conservatives in Congress and the Supreme Court sought to limit the New Deal’s scope.",
+
+"C. Although the New Deal did not end the Depression, it left a legacy of reforms and regulatory agencies and fostered a long-term political realignment in which many ethnic groups, African Americans, and working-class communities identified with the Democratic Party."
+
+    ],
+
+[
+	"I. Popular culture grew in influence in U.S. society, even as debates increased over the effects of culture on public values, morals, and American national identity.",
+"A. New forms of mass media, such as radio and cinema, contributed to the spread of national culture as well as greater awareness of regional cultures.",
+"B. Migration gave rise to new forms of art and literature that expressed ethnic and regional identities, such the Harlem Renaissance movement.",
+"C. Official restrictions on freedom of speech grew during World War I, as increased anxiety about radicalism led to a Red Scare and attacks on labor activism and immigrant culture.",
+"D. In the 1920s, cultural and political controversies emerged as Americans debated gender roles, modernism, science, religion, and issues related to race and immigration.",
+"II. Economic pressures, global events, and political developments caused sharp variations in the numbers, sources, and experiences of both international and internal migrants.",
+"A. Immigration from Europe reached its peak in the years before World War I. During and after World War I, nativist campaigns against some ethnic groups led to the passage of quotas that restricted immigration, particularly from southern and eastern Europe, and increased barriers to Asian immigration.",
+"B. The increased demand for war production and labor during World War I and World War II and the economic difficulties of the 1930s led many Americans to migrate to urban centers in search of economic opportunities.",
+"C. In the Great Migration during and after World War I, African Americans escaping segregation, racial violence, and limited economic opportunity in the South moved to the North and West, where they found new opportunities but still encountered discrimination.",
+"D. Migration to the United States from Mexico and elsewhere in the Western Hemisphere increased, in spite of contradictory government policies toward Mexican immigration."
+
+],
+
+[
+	"I. In the late 19th century and early 20th century, new U.S. territorial ambitions and acquisitions in the Western Hemisphere and the Pacific accompanied heightened public debates over America’s role in the world.",
+"A. Imperialists cited economic opportunities, racial theories, competition with European empires, and the perception in the 1890s that the western frontier was “closed” to argue that Americans were destined to expand their culture and institutions to peoples around the globe.",
+"B. Anti-imperialists cited principles of self-determination and invoked both racial theories and the U.S. foreign policy tradition of isolationism to argue that the United States should not extend its territory overseas.",
+"C. The American victory in the Spanish–American War led to the U.S. acquisition of island territories in the Caribbean and the Pacific, an increase in involvement in Asia, and the suppression of a nationalist movement in the Philippines.",
+"II. World War I and its aftermath intensified ongoing debates about the nation’s role in the world and how best to achieve national security and pursue American interests.",
+"A. After initial neutrality in World War I, the nation entered the conflict, departing from the U.S. foreign policy tradition of noninvolvement in European affairs, in response to Woodrow Wilson’s call for the defense of humanitarian and democratic principles.",
+"B. Although the American Expeditionary Forces played a relatively limited role in combat, the United States’ entry helped to tip the balance of the conflict in favor of the Allies.",
+"C. Despite Wilson’s deep involvement in postwar negotiations, the U.S. Senate refused to ratify the Treaty of Versailles or join the League of Nations.",
+"D. In the years following World War I, the United States pursued a unilateral foreign policy that used international investment, peace treaties, and select military intervention to promote a vision of international order, even while maintaining U.S. isolationism.",
+"E. In the 1930s, while many Americans were concerned about the rise of fascism and totalitarianism, most opposed taking military action against the aggression of Nazi Germany and Japan until the Japanese attack on Pearl Harbor drew the United States into World War II.",
+"III. U.S. participation in World War II transformed American society, while the victory of the United States and its allies over the Axis powers vaulted the U.S. into a position of global, political, and military leadership.",
+"A. Americans viewed the war as a fight for the survival of freedom and democracy against fascist and militarist ideologies. This perspective was later reinforced by revelations about Japanese wartime atrocities, Nazi concentration camps, and the Holocaust.",
+"B. The mass mobilization of American society helped end the Great Depression, and the country’s strong industrial base played a pivotal role in winning the war by equipping and provisioning allies and millions of U.S. troops.",
+"C. Mobilization and military service provided opportunities for women and minorities to improve their socioeconomic positions for the war’s duration, while also leading to debates over racial segregation. Wartime experiences also generated challenges to civil liberties, such as the internment of Japanese Americans.",
+"D. The United States and its allies achieved military victory through Allied cooperation, technological and scientific advances, the contributions of servicemen and women, and campaigns such as Pacific “island-hopping” and the D-Day invasion. The use of atomic bombs hastened the end of the war and sparked debates about the morality of using atomic weapons.",
+"E. The war-ravaged condition of Asia and Europe, and the dominant U.S. role in the Allied victory and postwar peace settlements, allowed the United States to emerge from the war as the most powerful nation on Earth."
+
+]
+	],
+//Unit 8
+[
+
+[
+  "I. United States policymakers engaged in a cold war with the authoritarian Soviet Union, seeking to limit the growth of Communist military power and ideological influence, create a free-market global economy, and build an international security system.",
+"A. As postwar tensions dissolved the wartime alliance between Western democracies and the Soviet Union, the United States developed a foreign policy based on collective security, international aid, and economic institutions that bolstered non-Communist nations.",
+"B. Concerned by expansionist Communist ideology and Soviet repression, the United States sought to contain communism through a variety of measures, including major military engagements in Korea and Vietnam.",
+"C. The Cold War fluctuated between periods of direct and indirect military confrontation and periods of mutual coexistence (or détente).",
+"D. Postwar decolonization and the emergence of powerful nationalist movements in Asia, Africa, and the Middle East led both sides in the Cold War to seek allies among new nations, many of which remained nonaligned.",
+"E. Cold War competition extended to Latin America, where the United States supported non-Communist regimes that had varying levels of commitment to democracy.",
+"II. Cold War policies led to public debates over the power of the federal government and acceptable means for pursuing international and domestic goals while protecting civil liberties.",
+"A. Americans debated policies and methods designed to expose suspected communists within the United States even as both parties supported the broader strategy of containing communism.",
+"B. Although anticommunist foreign policy faced little domestic opposition in previous years, the Vietnam War inspired sizable and passionate antiwar protests that became more numerous as the war escalated and sometimes led to violence.",
+"C. Americans debated the merits of a large nuclear arsenal, the military-industrial complex, and the appropriate power of the executive branch in conducting foreign and military policy.",
+"D. Ideological, military, and economic concerns shaped U.S. involvement in the Middle East, with several oil crises in the region eventually sparking attempts at creating a national energy policy."
+
+    ],
+
+[
+	"I. Seeking to fulfill Reconstruction-era promises, civil rights activists and political leaders achieved some legal and political successes in ending segregation, although progress toward racial equality was slow.",
+"A. During and after World War II, civil rights activists and leaders, most notably Martin Luther King Jr., combatted racial discrimination utilizing a variety of strategies, including legal challenges, direct action, and nonviolent protest tactics.",
+"B. The three branches of the federal government used measures including desegregation of the armed services, Brown v. Board of Education, and the Civil Rights Act of 1964 to promote greater racial equality.",
+"C. Continuing resistance slowed efforts at desegregation, sparking social and political unrest across the nation. Debates among civil rights activists over the efficacy of nonviolence increased after 1965.",
+
+"II. Responding to social conditions and the African American civil rights movement, a variety of movements emerged that focused on issues of identity, social justice, and the environment.",
+"A. Feminist and gay and lesbian activists mobilized behind claims for legal, economic, and social equality.",
+"B. Latino, American Indian, and Asian American movements continued to demand social and economic equality and a redress of past injustices.",
+"C. Despite an overall affluence in postwar America, advocates raised concerns about the prevalence and persistence of poverty as a national problem.",
+"D. Environmental problems and accidents led to a growing environmental movement that aimed to use legislative and public efforts to combat pollution and protect natural resources. The federal government established new environmental programs and regulations.",
+"III. Liberalism influenced postwar politics and court decisions, but it came under increasing attack from the left as well as from a resurgent conservative movement.",
+"A. Liberalism, based on anticommunism abroad and a firm belief in the efficacy of government power to achieve social goals at home, reached a high point of political influence by the mid-1960s.",
+"B. Liberal ideas found expression in Lyndon Johnson’s Great Society, which attempted to use federal legislation and programs to end racial discrimination, eliminate poverty, and address other social issues. A series of Supreme Court decisions expanded civil rights and individual liberties.",
+"C. In the 1960s, conservatives challenged liberal laws and court decisions and perceived moral and cultural decline, seeking to limit the role of the federal government and enact more assertive foreign policies.",
+"D. Some groups on the left also rejected liberal policies, arguing that political leaders did too little to transform the racial and economic status quo at home and pursued immoral policies abroad.",
+"E. Public confidence and trust in government’s ability to solve social and economic problems declined in the 1970s in the wake of economic challenges, political scandals, and foreign policy crises.",
+"F. The 1970s saw growing clashes between conservatives and liberals over social and cultural issues, the power of the federal government, race, and movements for greater individual rights."
+
+],
+
+[
+	"I. Rapid economic and social changes in American society fostered a sense of optimism in the postwar years.",
+"A. A burgeoning private sector, federal spending, the baby boom, and technological developments helped spur economic growth.",
+"B. As higher education opportunities and new technologies rapidly expanded, increasing social mobility encouraged the migration of the middle class to the suburbs and of many Americans to the South and West. The Sun Belt region emerged as a significant political and economic force.",
+"C. Immigrants from around the world sought access to the political, social, and economic opportunities in the United States, especially after the passage of new immigration laws in 1965.",
+
+"II. New demographic and social developments, along with anxieties over the Cold War, changed U.S. culture and led to significant political and moral debates that sharply divided the nation.",
+"A. Mass culture became increasingly homogeneous in the postwar years, inspiring challenges to conformity by artists, intellectuals, and rebellious youth.",
+"B. Feminists and young people who participated in the counterculture of the 1960s rejected many of the social, economic, and political values of their parents’ generation, introduced greater informality into U.S. culture, and advocated changes in sexual norms.",
+"C. The rapid and substantial growth of evangelical Christian churches and organizations was accompanied by greater political and social activism on the part of religious conservatives."
+
+]
+	],
+//Unit 9
+[
+
+[
+  "I. Conservative beliefs regarding the need for traditional social values and a reduced role for government advanced in U.S. politics after 1980.",
+"A. Ronald Reagan’s victory in the presidential election of 1980 represented an important milestone, allowing conservatives to enact significant tax cuts and continue the deregulation of many industries.",
+"B. Conservatives argued that liberal programs were counterproductive in fighting poverty and stimulating economic growth. Some of their efforts to reduce the size and scope of government met with inertia and liberal opposition, as many programs remained popular with voters.",
+"C. Policy debates continued over free-trade agreements, the scope of the government social safety net, and calls to reform the U.S. financial system."
+
+    ],
+
+[
+	"I. New developments in science and technology enhanced the economy and transformed society, while manufacturing decreased.",
+"A. Economic productivity increased as improvements in digital communications enabled increased American participation in worldwide economic opportunities.",
+"B. Technological innovations in computing, digital mobile technology, and the Internet transformed daily life, increased access to information, and led to new social behaviors and networks.",
+"C. Employment increased in service sectors and decreased in manufacturing, and union membership declined.",
+"D. Real wages stagnated for the working and middle class amid growing economic inequality.",
+"II. The U.S. population continued to undergo demographic shifts that had significant cultural and political consequences.",
+"A. After 1980, the political, economic, and cultural influence of the American South and West continued to increase as population shifted to those areas.",
+"B. International migration from Latin America and Asia increased dramatically. The new immigrants affected U.S. culture in many ways and supplied the economy with an important labor force.",
+"C. Intense political and cultural debates continued over issues such as immigration policy, diversity, gender roles, and family structures."
+
+],
+
+[
+	"I. The Reagan administration promoted an interventionist foreign policy that continued in later administrations, even after the end of the Cold War.",
+"A. Reagan asserted U.S. opposition to communism through speeches, diplomatic efforts, limited military interventions, and a buildup of nuclear and conventional weapons.",
+
+"B. Increased U.S. military spending, Reagan’s diplomatic initiatives, and political changes and economic problems in Eastern Europe and the Soviet Union were all important in ending the Cold War.",
+"C. The end of the Cold War led to new diplomatic relationships but also new U.S. military and peacekeeping interventions, as well as continued debates over the appropriate use of American power in the world.",
+"II. Following the attacks of September 11, 2001, U.S. foreign policy efforts focused on fighting terrorism around the world.",
+"A. In the wake of attacks on the World Trade Center and the Pentagon, the United States launched military efforts against terrorism and lengthy, controversial conflicts in Afghanistan and Iraq.",
+"B. The war on terrorism sought to improve security within the United States but also raised questions about the protection of civil liberties and human rights.",
+"C. Conflicts in the Middle East and concerns about climate change led to debates over U.S. dependence on fossil fuels and the impact of economic consumption on the environment.",
+"D. Despite economic and foreign policy challenges, the United States continued as the world’s leading superpower in the 21st century."
+]
+	]
+]
+	function setUnit(x){
+		
+		unit = x;
+		y = 0;
+		z = 0;
+	}
+	function subUnit(w, x){
+		var uni = 0;
+		for(i = 0; i < more[unit-1][w-1].length; i++){
+			if(more[unit-1][w-1][i].charAt(0) == "I") {
+			uni++;
+		}
+		else if(uni != x){
+			document.getElementById("more-field" + (i+1)).style.display = "none";
+		}
+		else{
+			document.getElementById("more-field" + (i+1)).style.display = "inline-block";
+		}
+		}
+	}
+
+	function kc(x){
+		for(i = more[unit-1][x-1].length + 1; i < 18; i++){
+
+			document.getElementById("more-field" + i).style.display = "none";
+		}
+		var uni = 0;
+		for(i = 1; i < more[unit-1][x-1].length + 1; i++){
+			
+		if(more[unit-1][x-1][i-1].charAt(0) == "I") {
+			uni++;
+			document.getElementById("more-field" + i).className = "field-btn";
+			document.getElementById("more-field" + i).setAttribute( "onClick", "subUnit("+x+", " + uni + ");" );
+			document.getElementById("more-field" + i).style.display = "inline-block";
+		}
+		else{
+			document.getElementById("more-field" + i).className = "rounded-field";
+			document.getElementById("more-field" + i).setAttribute( "onClick", "");
+			document.getElementById("more-field" + i).style.display = "none";
+		}
+		document.getElementById("more-field" + i).innerHTML = more[unit-1][x-1][i-1];
+		}
+	}
+
+	function ask(x) {
+		if(x == 1) {
+			document.getElementById("topic-btn").innerHTML = "Key Concept " + unit + "." + (y%responses[unit-1].length+1);
+			y++;
+		}
+		else {
+			if(unit == 1) document.getElementById("question-btn").innerHTML = skillsOne[z%3]; 
+			else document.getElementById("question-btn").innerHTML = skills[z%4];
+			z++;
+		}
+
+		if(document.getElementById("topic-btn").innerHTML != "Choose Concept" && 
+		document.getElementById("question-btn").innerHTML != "Choose Skill"){
+			document.getElementById("answer-field").innerHTML = responses[unit-1][(y-1)%(responses[unit-1].length)][(z-1)%(responses[unit-1][(y-1)%(responses[unit-1].length)].length)];
+		}
+	}
+	</script>
+</html>
