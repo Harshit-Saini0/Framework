@@ -1,4 +1,4 @@
-#AP US History Framework Study Tool
+# AP US History Framework Study Tool
 
 With the APUSH exam approaching quickly, I wanted to make a simple way to efficiently study. My teacher had consistently emphasized that the framework was the key to success on the exam, and although I agreed, studying directly off the framework was less than ideal. 
 
